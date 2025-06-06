@@ -1,0 +1,1675 @@
+[
+    {
+        "word": "Attention",
+        "original_global_index": 0,
+        "start": 1.58,
+        "end": 2.2800000000000002,
+        "case": "success"
+    },
+    {
+        "word": "is",
+        "original_global_index": 1,
+        "start": 2.33,
+        "end": 2.67,
+        "case": "success"
+    },
+    {
+        "word": "all",
+        "original_global_index": 2,
+        "start": 2.7,
+        "end": 3.1500000000000004,
+        "case": "success"
+    },
+    {
+        "word": "you",
+        "original_global_index": 3,
+        "start": 3.2,
+        "end": 3.5500000000000003,
+        "case": "success"
+    },
+    {
+        "word": "need.",
+        "original_global_index": 4,
+        "start": 3.56,
+        "end": 4.21,
+        "case": "success"
+    },
+    {
+        "word": "These",
+        "original_global_index": 5,
+        "start": 4.7,
+        "end": 5.13,
+        "case": "success"
+    },
+    {
+        "word": "five",
+        "original_global_index": 6,
+        "start": 5.13,
+        "end": 5.5,
+        "case": "success"
+    },
+    {
+        "word": "words",
+        "original_global_index": 7,
+        "start": 5.5,
+        "end": 5.88,
+        "case": "success"
+    },
+    {
+        "word": "make",
+        "original_global_index": 8,
+        "start": 5.88,
+        "end": 6.14,
+        "case": "success"
+    },
+    {
+        "word": "up",
+        "original_global_index": 9,
+        "start": 6.15,
+        "end": 6.300000000000001,
+        "case": "success"
+    },
+    {
+        "word": "the",
+        "original_global_index": 10,
+        "start": 6.3,
+        "end": 6.43,
+        "case": "success"
+    },
+    {
+        "word": "title",
+        "original_global_index": 11,
+        "start": 6.44,
+        "end": 6.890000000000001,
+        "case": "success"
+    },
+    {
+        "word": "of",
+        "original_global_index": 12,
+        "start": 6.92,
+        "end": 7.09,
+        "case": "success"
+    },
+    {
+        "word": "the",
+        "original_global_index": 13,
+        "start": 7.09,
+        "end": 7.25,
+        "case": "success"
+    },
+    {
+        "word": "scientific",
+        "original_global_index": 14,
+        "start": 7.26,
+        "end": 7.89,
+        "case": "success"
+    },
+    {
+        "word": "paper",
+        "original_global_index": 15,
+        "start": 7.89,
+        "end": 8.27,
+        "case": "success"
+    },
+    {
+        "word": "that",
+        "original_global_index": 16,
+        "start": 8.27,
+        "end": 8.53,
+        "case": "success"
+    },
+    {
+        "word": "gave",
+        "original_global_index": 17,
+        "start": 8.53,
+        "end": 8.78,
+        "case": "success"
+    },
+    {
+        "word": "birth",
+        "original_global_index": 18,
+        "start": 8.8,
+        "end": 9.15,
+        "case": "success"
+    },
+    {
+        "word": "to",
+        "original_global_index": 19,
+        "start": 9.15,
+        "end": 9.33,
+        "case": "success"
+    },
+    {
+        "word": "large",
+        "original_global_index": 20,
+        "start": 9.33,
+        "end": 9.69,
+        "case": "success"
+    },
+    {
+        "word": "language",
+        "original_global_index": 21,
+        "start": 9.75,
+        "end": 10.24,
+        "case": "success"
+    },
+    {
+        "word": "models",
+        "original_global_index": 22,
+        "start": 10.27,
+        "end": 10.889999999999999,
+        "case": "success"
+    },
+    {
+        "word": "that",
+        "original_global_index": 23,
+        "start": 11.07,
+        "end": 11.41,
+        "case": "success"
+    },
+    {
+        "word": "power",
+        "original_global_index": 24,
+        "start": 11.57,
+        "end": 12.120000000000001,
+        "case": "success"
+    },
+    {
+        "word": "ChatGPT,",
+        "original_global_index": 25,
+        "start": 12.139999,
+        "end": 12.489999,
+        "case": "success"
+    },
+    {
+        "word": "Claude,",
+        "original_global_index": 26,
+        "start": 13.58,
+        "end": 14.09,
+        "case": "success"
+    },
+    {
+        "word": "Copilot,",
+        "original_global_index": 27,
+        "start": 14.13,
+        "end": 14.82,
+        "case": "success"
+    },
+    {
+        "word": "and",
+        "original_global_index": 28,
+        "start": 14.87,
+        "end": 15.29,
+        "case": "success"
+    },
+    {
+        "word": "DeepSeek.",
+        "original_global_index": 29,
+        "start": 15.33,
+        "end": 16.04,
+        "case": "success"
+    },
+    {
+        "word": "5",
+        "original_global_index": 30,
+        "start": 16.799999,
+        "end": 17.319999,
+        "case": "success"
+    },
+    {
+        "word": "simple",
+        "original_global_index": 31,
+        "start": 17.82,
+        "end": 18.19,
+        "case": "success"
+    },
+    {
+        "word": "words",
+        "original_global_index": 32,
+        "start": 18.2,
+        "end": 18.84,
+        "case": "success"
+    },
+    {
+        "word": "Attention",
+        "original_global_index": 33,
+        "start": 19.27,
+        "end": 19.99,
+        "case": "success"
+    },
+    {
+        "word": "is",
+        "original_global_index": 34,
+        "start": 20.42,
+        "end": 20.64,
+        "case": "success"
+    },
+    {
+        "word": "all",
+        "original_global_index": 35,
+        "start": 20.64,
+        "end": 20.86,
+        "case": "success"
+    },
+    {
+        "word": "you",
+        "original_global_index": 36,
+        "start": 20.86,
+        "end": 21.02,
+        "case": "success"
+    },
+    {
+        "word": "need.",
+        "original_global_index": 37,
+        "start": 21.02,
+        "end": 21.48,
+        "case": "success"
+    },
+    {
+        "word": "And",
+        "original_global_index": 38,
+        "start": 21.990000000000002,
+        "end": 22.220000000000002,
+        "case": "success"
+    },
+    {
+        "word": "now",
+        "original_global_index": 39,
+        "start": 22.22,
+        "end": 22.669999999999998,
+        "case": "success"
+    },
+    {
+        "word": "ChatGPT",
+        "original_global_index": 40,
+        "start": 23.12,
+        "end": 23.75,
+        "case": "success"
+    },
+    {
+        "word": "generates",
+        "original_global_index": 41,
+        "start": 23.75,
+        "end": 24.33,
+        "case": "success"
+    },
+    {
+        "word": "more",
+        "original_global_index": 42,
+        "start": 24.33,
+        "end": 24.599999999999998,
+        "case": "success"
+    },
+    {
+        "word": "than",
+        "original_global_index": 43,
+        "start": 24.6,
+        "end": 24.89,
+        "case": "success"
+    },
+    {
+        "word": "a",
+        "original_global_index": 44,
+        "start": 24.91,
+        "end": 25.13,
+        "case": "success"
+    },
+    {
+        "word": "billion",
+        "original_global_index": 45,
+        "start": 25.14,
+        "end": 25.78,
+        "case": "success"
+    },
+    {
+        "word": "words",
+        "original_global_index": 46,
+        "start": 25.79,
+        "end": 26.259999999999998,
+        "case": "success"
+    },
+    {
+        "word": "per",
+        "original_global_index": 47,
+        "start": 26.27,
+        "end": 26.47,
+        "case": "success"
+    },
+    {
+        "word": "day.",
+        "original_global_index": 48,
+        "start": 26.47,
+        "end": 27.009999999999998,
+        "case": "success"
+    },
+    {
+        "word": "This",
+        "original_global_index": 49,
+        "start": 27.5,
+        "end": 27.91,
+        "case": "success"
+    },
+    {
+        "word": "is",
+        "original_global_index": 50,
+        "start": 27.929999000000002,
+        "end": 28.159999000000003,
+        "case": "success"
+    },
+    {
+        "word": "the",
+        "original_global_index": 51,
+        "start": 28.189999999999998,
+        "end": 28.339999999999996,
+        "case": "success"
+    },
+    {
+        "word": "story",
+        "original_global_index": 52,
+        "start": 28.34,
+        "end": 28.91,
+        "case": "success"
+    },
+    {
+        "word": "of",
+        "original_global_index": 53,
+        "start": 28.91,
+        "end": 29.06,
+        "case": "success"
+    },
+    {
+        "word": "those",
+        "original_global_index": 54,
+        "start": 29.059998999999998,
+        "end": 29.329998999999997,
+        "case": "success"
+    },
+    {
+        "word": "five",
+        "original_global_index": 55,
+        "start": 29.34,
+        "end": 29.86,
+        "case": "success"
+    },
+    {
+        "word": "magic",
+        "original_global_index": 56,
+        "start": 29.9,
+        "end": 30.32,
+        "case": "success"
+    },
+    {
+        "word": "words",
+        "original_global_index": 57,
+        "start": 30.33,
+        "end": 31.04,
+        "case": "success"
+    },
+    {
+        "word": "how",
+        "original_global_index": 58,
+        "start": 31.11,
+        "end": 31.43,
+        "case": "success"
+    },
+    {
+        "word": "they",
+        "original_global_index": 59,
+        "start": 31.429999000000002,
+        "end": 31.739999,
+        "case": "success"
+    },
+    {
+        "word": "transformed",
+        "original_global_index": 60,
+        "start": 31.78,
+        "end": 32.65,
+        "case": "success"
+    },
+    {
+        "word": "artificial",
+        "original_global_index": 61,
+        "start": 32.67,
+        "end": 33.260000000000005,
+        "case": "success"
+    },
+    {
+        "word": "intelligence",
+        "original_global_index": 62,
+        "start": 33.259999,
+        "end": 33.959999,
+        "case": "success"
+    },
+    {
+        "word": "with",
+        "original_global_index": 63,
+        "start": 33.969999,
+        "end": 34.219999,
+        "case": "success"
+    },
+    {
+        "word": "one",
+        "original_global_index": 64,
+        "start": 34.25,
+        "end": 34.8,
+        "case": "success"
+    },
+    {
+        "word": "simple",
+        "original_global_index": 65,
+        "start": 34.809999000000005,
+        "end": 35.279999000000004,
+        "case": "success"
+    },
+    {
+        "word": "thing:",
+        "original_global_index": 66,
+        "start": 35.299999,
+        "end": 35.909999,
+        "case": "success"
+    },
+    {
+        "word": "The",
+        "original_global_index": 67,
+        "start": 36.879999,
+        "end": 37.069998999999996,
+        "case": "success"
+    },
+    {
+        "word": "ability",
+        "original_global_index": 68,
+        "start": 37.07,
+        "end": 37.61,
+        "case": "success"
+    },
+    {
+        "word": "to",
+        "original_global_index": 69,
+        "start": 37.61,
+        "end": 37.769999999999996,
+        "case": "success"
+    },
+    {
+        "word": "pay",
+        "original_global_index": 70,
+        "start": 37.769999999999996,
+        "end": 38.0,
+        "case": "success"
+    },
+    {
+        "word": "attention.",
+        "original_global_index": 71,
+        "start": 38.07,
+        "end": 38.6,
+        "case": "success"
+    },
+    {
+        "word": "I",
+        "original_global_index": 72,
+        "start": 39.64,
+        "end": 39.97,
+        "case": "success"
+    },
+    {
+        "word": "hope",
+        "original_global_index": 73,
+        "start": 40.13,
+        "end": 40.440000000000005,
+        "case": "success"
+    },
+    {
+        "word": "to",
+        "original_global_index": 74,
+        "start": 40.47,
+        "end": 40.69,
+        "case": "success"
+    },
+    {
+        "word": "hold",
+        "original_global_index": 75,
+        "start": 40.69,
+        "end": 41.01,
+        "case": "success"
+    },
+    {
+        "word": "your",
+        "original_global_index": 76,
+        "start": 41.01,
+        "end": 41.169999999999995,
+        "case": "success"
+    },
+    {
+        "word": "attention",
+        "original_global_index": 77,
+        "start": 41.2,
+        "end": 41.720000000000006,
+        "case": "success"
+    },
+    {
+        "word": "long",
+        "original_global_index": 78,
+        "start": 41.72,
+        "end": 42.019999999999996,
+        "case": "success"
+    },
+    {
+        "word": "enough",
+        "original_global_index": 79,
+        "start": 42.019999999999996,
+        "end": 42.349999999999994,
+        "case": "success"
+    },
+    {
+        "word": "to",
+        "original_global_index": 80,
+        "start": 42.38,
+        "end": 42.67,
+        "case": "success"
+    },
+    {
+        "word": "finish",
+        "original_global_index": 81,
+        "start": 42.67,
+        "end": 43.050000000000004,
+        "case": "success"
+    },
+    {
+        "word": "this",
+        "original_global_index": 82,
+        "start": 43.05,
+        "end": 43.23,
+        "case": "success"
+    },
+    {
+        "word": "story.",
+        "original_global_index": 83,
+        "start": 43.24,
+        "end": 43.81,
+        "case": "success"
+    },
+    {
+        "word": "If",
+        "original_global_index": 84,
+        "start": 44.230000000000004,
+        "end": 44.480000000000004,
+        "case": "success"
+    },
+    {
+        "word": "I",
+        "original_global_index": 85,
+        "start": 44.5,
+        "end": 44.66,
+        "case": "success"
+    },
+    {
+        "word": "can",
+        "original_global_index": 86,
+        "start": 44.66,
+        "end": 44.83,
+        "case": "success"
+    },
+    {
+        "word": "do",
+        "original_global_index": 87,
+        "start": 44.83,
+        "end": 45.019999999999996,
+        "case": "success"
+    },
+    {
+        "word": "that,",
+        "original_global_index": 88,
+        "start": 45.019999999999996,
+        "end": 45.33,
+        "case": "success"
+    },
+    {
+        "word": "I",
+        "original_global_index": 89,
+        "start": 45.34,
+        "end": 45.68000000000001,
+        "case": "success"
+    },
+    {
+        "word": "think",
+        "original_global_index": 90,
+        "start": 45.769999999999996,
+        "end": 46.04,
+        "case": "success"
+    },
+    {
+        "word": "you\u2019ll",
+        "original_global_index": 91,
+        "start": 46.05,
+        "end": 46.349999999999994,
+        "case": "success"
+    },
+    {
+        "word": "come",
+        "original_global_index": 92,
+        "start": 46.349999,
+        "end": 46.589999,
+        "case": "success"
+    },
+    {
+        "word": "away",
+        "original_global_index": 93,
+        "start": 46.59,
+        "end": 46.93000000000001,
+        "case": "success"
+    },
+    {
+        "word": "with",
+        "original_global_index": 94,
+        "start": 46.929999,
+        "end": 47.139999,
+        "case": "success"
+    },
+    {
+        "word": "a",
+        "original_global_index": 95,
+        "start": 47.15,
+        "end": 47.269999999999996,
+        "case": "success"
+    },
+    {
+        "word": "new",
+        "original_global_index": 96,
+        "start": 47.269999999999996,
+        "end": 47.48,
+        "case": "success"
+    },
+    {
+        "word": "appreciation",
+        "original_global_index": 97,
+        "start": 47.480000000000004,
+        "end": 48.300000000000004,
+        "case": "success"
+    },
+    {
+        "word": "for",
+        "original_global_index": 98,
+        "start": 48.3,
+        "end": 48.61,
+        "case": "success"
+    },
+    {
+        "word": "attention",
+        "original_global_index": 99,
+        "start": 48.63,
+        "end": 49.11,
+        "case": "success"
+    },
+    {
+        "word": "itself",
+        "original_global_index": 100,
+        "start": 49.16,
+        "end": 49.959999999999994,
+        "case": "success"
+    },
+    {
+        "word": "be",
+        "original_global_index": 101,
+        "start": 50.179999,
+        "end": 50.459999,
+        "case": "success"
+    },
+    {
+        "word": "it",
+        "original_global_index": 102,
+        "start": 50.46,
+        "end": 50.69,
+        "case": "success"
+    },
+    {
+        "word": "artificial",
+        "original_global_index": 103,
+        "start": 50.79,
+        "end": 51.38,
+        "case": "success"
+    },
+    {
+        "word": "attention,",
+        "original_global_index": 104,
+        "start": 51.38,
+        "end": 51.970000000000006,
+        "case": "success"
+    },
+    {
+        "word": "human",
+        "original_global_index": 105,
+        "start": 52.35,
+        "end": 52.84,
+        "case": "success"
+    },
+    {
+        "word": "attention,",
+        "original_global_index": 106,
+        "start": 52.869999,
+        "end": 53.649999,
+        "case": "success"
+    },
+    {
+        "word": "your",
+        "original_global_index": 107,
+        "start": 53.719999,
+        "end": 54.219999,
+        "case": "success"
+    },
+    {
+        "word": "attention,",
+        "original_global_index": 108,
+        "start": 54.22,
+        "end": 55.04,
+        "case": "success"
+    },
+    {
+        "word": "mine,",
+        "original_global_index": 109,
+        "start": 55.49,
+        "end": 56.07,
+        "case": "success"
+    },
+    {
+        "word": "or",
+        "original_global_index": 110,
+        "start": 56.88,
+        "end": 57.440000000000005,
+        "case": "success"
+    },
+    {
+        "word": "the",
+        "original_global_index": 111,
+        "start": 57.49,
+        "end": 57.71,
+        "case": "success"
+    },
+    {
+        "word": "kind",
+        "original_global_index": 112,
+        "start": 57.72,
+        "end": 57.99,
+        "case": "success"
+    },
+    {
+        "word": "of",
+        "original_global_index": 113,
+        "start": 57.99,
+        "end": 58.120000000000005,
+        "case": "success"
+    },
+    {
+        "word": "societal",
+        "original_global_index": 114,
+        "start": 58.12,
+        "end": 58.699999999999996,
+        "case": "success"
+    },
+    {
+        "word": "attention",
+        "original_global_index": 115,
+        "start": 58.7,
+        "end": 59.160000000000004,
+        "case": "success"
+    },
+    {
+        "word": "that\u2019s",
+        "original_global_index": 116,
+        "start": 59.16,
+        "end": 59.47,
+        "case": "success"
+    },
+    {
+        "word": "being",
+        "original_global_index": 117,
+        "start": 59.47,
+        "end": 59.76,
+        "case": "success"
+    },
+    {
+        "word": "given",
+        "original_global_index": 118,
+        "start": 59.769999999999996,
+        "end": 60.05,
+        "case": "success"
+    },
+    {
+        "word": "to",
+        "original_global_index": 119,
+        "start": 60.05,
+        "end": 60.3,
+        "case": "success"
+    },
+    {
+        "word": "artificial",
+        "original_global_index": 120,
+        "start": 60.31,
+        "end": 60.870000000000005,
+        "case": "success"
+    },
+    {
+        "word": "intelligence",
+        "original_global_index": 121,
+        "start": 60.87,
+        "end": 61.48,
+        "case": "success"
+    },
+    {
+        "word": "as",
+        "original_global_index": 122,
+        "start": 61.53,
+        "end": 61.85,
+        "case": "success"
+    },
+    {
+        "word": "it",
+        "original_global_index": 123,
+        "start": 61.88,
+        "end": 62.09,
+        "case": "success"
+    },
+    {
+        "word": "grows",
+        "original_global_index": 124,
+        "start": 62.09,
+        "end": 62.52,
+        "case": "success"
+    },
+    {
+        "word": "and",
+        "original_global_index": 125,
+        "start": 62.55,
+        "end": 62.79,
+        "case": "success"
+    },
+    {
+        "word": "spreads",
+        "original_global_index": 126,
+        "start": 62.79,
+        "end": 63.28,
+        "case": "success"
+    },
+    {
+        "word": "among",
+        "original_global_index": 127,
+        "start": 63.33,
+        "end": 63.65,
+        "case": "success"
+    },
+    {
+        "word": "us.",
+        "original_global_index": 128,
+        "start": 63.65,
+        "end": 64.06,
+        "case": "success"
+    },
+    {
+        "word": "And",
+        "original_global_index": 129,
+        "start": 65.37,
+        "end": 65.59,
+        "case": "success"
+    },
+    {
+        "word": "look,",
+        "original_global_index": 130,
+        "start": 65.59,
+        "end": 65.99000000000001,
+        "case": "success"
+    },
+    {
+        "word": "if",
+        "original_global_index": 131,
+        "start": 66.719999,
+        "end": 66.919999,
+        "case": "success"
+    },
+    {
+        "word": "you\u2019re",
+        "original_global_index": 132,
+        "start": 66.92,
+        "end": 67.17,
+        "case": "success"
+    },
+    {
+        "word": "a",
+        "original_global_index": 133,
+        "start": 67.17,
+        "end": 67.23,
+        "case": "success"
+    },
+    {
+        "word": "human",
+        "original_global_index": 134,
+        "start": 67.23,
+        "end": 67.64,
+        "case": "success"
+    },
+    {
+        "word": "viewer,",
+        "original_global_index": 135,
+        "start": 67.65,
+        "end": 68.27000000000001,
+        "case": "success"
+    },
+    {
+        "word": "I",
+        "original_global_index": 136,
+        "start": 68.53,
+        "end": 68.91,
+        "case": "success"
+    },
+    {
+        "word": "know",
+        "original_global_index": 137,
+        "start": 68.92,
+        "end": 69.4,
+        "case": "success"
+    },
+    {
+        "word": "that",
+        "original_global_index": 138,
+        "start": 69.41,
+        "end": 69.66,
+        "case": "success"
+    },
+    {
+        "word": "your",
+        "original_global_index": 139,
+        "start": 69.66,
+        "end": 69.97999999999999,
+        "case": "success"
+    },
+    {
+        "word": "attention",
+        "original_global_index": 140,
+        "start": 69.99,
+        "end": 70.50999999999999,
+        "case": "success"
+    },
+    {
+        "word": "is",
+        "original_global_index": 141,
+        "start": 70.539999,
+        "end": 70.709999,
+        "case": "success"
+    },
+    {
+        "word": "a",
+        "original_global_index": 142,
+        "start": 70.709999,
+        "end": 70.86999899999999,
+        "case": "success"
+    },
+    {
+        "word": "precious",
+        "original_global_index": 143,
+        "start": 70.889999,
+        "end": 71.279999,
+        "case": "success"
+    },
+    {
+        "word": "commodity.",
+        "original_global_index": 144,
+        "start": 71.279999,
+        "end": 72.019999,
+        "case": "success"
+    },
+    {
+        "word": "For",
+        "original_global_index": 145,
+        "start": 72.99,
+        "end": 73.3,
+        "case": "success"
+    },
+    {
+        "word": "humans",
+        "original_global_index": 146,
+        "start": 73.299999,
+        "end": 73.689999,
+        "case": "success"
+    },
+    {
+        "word": "like",
+        "original_global_index": 147,
+        "start": 73.799999,
+        "end": 73.989999,
+        "case": "success"
+    },
+    {
+        "word": "you,",
+        "original_global_index": 148,
+        "start": 73.989999,
+        "end": 74.269999,
+        "case": "success"
+    },
+    {
+        "word": "attention",
+        "original_global_index": 149,
+        "start": 74.45,
+        "end": 75.08,
+        "case": "success"
+    },
+    {
+        "word": "takes",
+        "original_global_index": 150,
+        "start": 75.09,
+        "end": 75.56,
+        "case": "success"
+    },
+    {
+        "word": "time.",
+        "original_global_index": 151,
+        "start": 75.61,
+        "end": 76.2,
+        "case": "success"
+    },
+    {
+        "word": "It",
+        "original_global_index": 152,
+        "start": 76.89,
+        "end": 77.08,
+        "case": "success"
+    },
+    {
+        "word": "takes",
+        "original_global_index": 153,
+        "start": 77.09,
+        "end": 77.53,
+        "case": "success"
+    },
+    {
+        "word": "energy.",
+        "original_global_index": 154,
+        "start": 77.64,
+        "end": 78.2,
+        "case": "success"
+    },
+    {
+        "word": "If",
+        "original_global_index": 155,
+        "start": 79.13,
+        "end": 79.53,
+        "case": "success"
+    },
+    {
+        "word": "Attention",
+        "original_global_index": 156,
+        "start": 79.65,
+        "end": 80.18,
+        "case": "success"
+    },
+    {
+        "word": "is",
+        "original_global_index": 157,
+        "start": 80.19,
+        "end": 80.39999999999999,
+        "case": "success"
+    },
+    {
+        "word": "all",
+        "original_global_index": 158,
+        "start": 80.41,
+        "end": 80.64,
+        "case": "success"
+    },
+    {
+        "word": "you",
+        "original_global_index": 159,
+        "start": 80.639999,
+        "end": 80.859999,
+        "case": "success"
+    },
+    {
+        "word": "need",
+        "original_global_index": 160,
+        "start": 80.87,
+        "end": 81.29,
+        "case": "success"
+    },
+    {
+        "word": "was",
+        "original_global_index": 161,
+        "start": 81.28999999999999,
+        "end": 81.50999999999999,
+        "case": "success"
+    },
+    {
+        "word": "just",
+        "original_global_index": 162,
+        "start": 81.51,
+        "end": 81.74000000000001,
+        "case": "success"
+    },
+    {
+        "word": "a",
+        "original_global_index": 163,
+        "start": 81.78,
+        "end": 81.94,
+        "case": "success"
+    },
+    {
+        "word": "story",
+        "original_global_index": 164,
+        "start": 81.94,
+        "end": 82.39,
+        "case": "success"
+    },
+    {
+        "word": "about",
+        "original_global_index": 165,
+        "start": 82.389999,
+        "end": 82.699999,
+        "case": "success"
+    },
+    {
+        "word": "computers,",
+        "original_global_index": 166,
+        "start": 82.7,
+        "end": 83.36,
+        "case": "success"
+    },
+    {
+        "word": "I",
+        "original_global_index": 167,
+        "start": 83.36,
+        "end": 83.54,
+        "case": "success"
+    },
+    {
+        "word": "wouldn\u2019t",
+        "original_global_index": 168,
+        "start": 83.55,
+        "end": 83.86,
+        "case": "success"
+    },
+    {
+        "word": "be",
+        "original_global_index": 169,
+        "start": 83.87,
+        "end": 84.06,
+        "case": "success"
+    },
+    {
+        "word": "bothering",
+        "original_global_index": 170,
+        "start": 84.059999,
+        "end": 84.559999,
+        "case": "success"
+    },
+    {
+        "word": "to",
+        "original_global_index": 171,
+        "start": 84.559999,
+        "end": 84.67999900000001,
+        "case": "success"
+    },
+    {
+        "word": "tell",
+        "original_global_index": 172,
+        "start": 84.679999,
+        "end": 84.97999899999999,
+        "case": "success"
+    },
+    {
+        "word": "it,",
+        "original_global_index": 173,
+        "start": 84.98,
+        "end": 85.12,
+        "case": "success"
+    },
+    {
+        "word": "and",
+        "original_global_index": 174,
+        "start": 85.139999,
+        "end": 85.269999,
+        "case": "success"
+    },
+    {
+        "word": "I",
+        "original_global_index": 175,
+        "start": 85.27,
+        "end": 85.44,
+        "case": "success"
+    },
+    {
+        "word": "wouldn\u2019t",
+        "original_global_index": 176,
+        "start": 85.45,
+        "end": 85.87,
+        "case": "success"
+    },
+    {
+        "word": "be",
+        "original_global_index": 177,
+        "start": 85.889999,
+        "end": 86.129999,
+        "case": "success"
+    },
+    {
+        "word": "asking",
+        "original_global_index": 178,
+        "start": 86.16,
+        "end": 86.69,
+        "case": "success"
+    },
+    {
+        "word": "you",
+        "original_global_index": 179,
+        "start": 86.69,
+        "end": 86.92,
+        "case": "success"
+    },
+    {
+        "word": "to",
+        "original_global_index": 180,
+        "start": 86.92,
+        "end": 87.10000000000001,
+        "case": "success"
+    },
+    {
+        "word": "invest",
+        "original_global_index": 181,
+        "start": 87.099999,
+        "end": 87.579999,
+        "case": "success"
+    },
+    {
+        "word": "the",
+        "original_global_index": 182,
+        "start": 87.63,
+        "end": 87.78999999999999,
+        "case": "success"
+    },
+    {
+        "word": "time",
+        "original_global_index": 183,
+        "start": 87.78999999999999,
+        "end": 88.25999999999999,
+        "case": "success"
+    },
+    {
+        "word": "and",
+        "original_global_index": 184,
+        "start": 88.279999,
+        "end": 88.669999,
+        "case": "success"
+    },
+    {
+        "word": "energy.",
+        "original_global_index": 185,
+        "start": 88.68,
+        "end": 89.29,
+        "case": "success"
+    },
+    {
+        "word": "I",
+        "original_global_index": 186,
+        "start": 91.049999,
+        "end": 91.199999,
+        "case": "success"
+    },
+    {
+        "word": "think",
+        "original_global_index": 187,
+        "start": 91.19999899999999,
+        "end": 91.599999,
+        "case": "success"
+    },
+    {
+        "word": "Attention",
+        "original_global_index": 188,
+        "start": 91.67,
+        "end": 92.14,
+        "case": "success"
+    },
+    {
+        "word": "is",
+        "original_global_index": 189,
+        "start": 92.14,
+        "end": 92.27,
+        "case": "success"
+    },
+    {
+        "word": "all",
+        "original_global_index": 190,
+        "start": 92.27,
+        "end": 92.42999999999999,
+        "case": "success"
+    },
+    {
+        "word": "you",
+        "original_global_index": 191,
+        "start": 92.43,
+        "end": 92.59,
+        "case": "success"
+    },
+    {
+        "word": "need",
+        "original_global_index": 192,
+        "start": 92.59,
+        "end": 92.92,
+        "case": "success"
+    },
+    {
+        "word": "is",
+        "original_global_index": 193,
+        "start": 92.92,
+        "end": 93.05,
+        "case": "success"
+    },
+    {
+        "word": "about",
+        "original_global_index": 194,
+        "start": 93.05,
+        "end": 93.31,
+        "case": "success"
+    },
+    {
+        "word": "more",
+        "original_global_index": 195,
+        "start": 93.31,
+        "end": 93.57000000000001,
+        "case": "success"
+    },
+    {
+        "word": "than",
+        "original_global_index": 196,
+        "start": 93.57,
+        "end": 93.80999999999999,
+        "case": "success"
+    },
+    {
+        "word": "computers.",
+        "original_global_index": 197,
+        "start": 93.81,
+        "end": 94.56,
+        "case": "success"
+    },
+    {
+        "word": "I",
+        "original_global_index": 198,
+        "start": 95.09,
+        "end": 95.27000000000001,
+        "case": "success"
+    },
+    {
+        "word": "think",
+        "original_global_index": 199,
+        "start": 95.27,
+        "end": 95.58999999999999,
+        "case": "success"
+    },
+    {
+        "word": "that",
+        "original_global_index": 200,
+        "start": 95.81,
+        "end": 96.08,
+        "case": "success"
+    },
+    {
+        "word": "no",
+        "original_global_index": 201,
+        "start": 96.1,
+        "end": 96.25,
+        "case": "success"
+    },
+    {
+        "word": "matter",
+        "original_global_index": 202,
+        "start": 96.25,
+        "end": 96.64,
+        "case": "success"
+    },
+    {
+        "word": "who",
+        "original_global_index": 203,
+        "start": 96.65,
+        "end": 96.89,
+        "case": "success"
+    },
+    {
+        "word": "you",
+        "original_global_index": 204,
+        "start": 96.89,
+        "end": 97.1,
+        "case": "success"
+    },
+    {
+        "word": "are,",
+        "original_global_index": 205,
+        "start": 97.1,
+        "end": 97.66999999999999,
+        "case": "success"
+    },
+    {
+        "word": "no",
+        "original_global_index": 206,
+        "start": 97.81,
+        "end": 97.96000000000001,
+        "case": "success"
+    },
+    {
+        "word": "matter",
+        "original_global_index": 207,
+        "start": 97.96,
+        "end": 98.39,
+        "case": "success"
+    },
+    {
+        "word": "who",
+        "original_global_index": 208,
+        "start": 98.429999,
+        "end": 98.74999899999999,
+        "case": "success"
+    },
+    {
+        "word": "you",
+        "original_global_index": 209,
+        "start": 98.77,
+        "end": 98.99,
+        "case": "success"
+    },
+    {
+        "word": "want",
+        "original_global_index": 210,
+        "start": 98.99,
+        "end": 99.3,
+        "case": "success"
+    },
+    {
+        "word": "to",
+        "original_global_index": 211,
+        "start": 99.309999,
+        "end": 99.45999900000001,
+        "case": "success"
+    },
+    {
+        "word": "be,",
+        "original_global_index": 212,
+        "start": 99.46000000000001,
+        "end": 100.03,
+        "case": "success"
+    },
+    {
+        "word": "no",
+        "original_global_index": 213,
+        "start": 100.4,
+        "end": 100.55000000000001,
+        "case": "success"
+    },
+    {
+        "word": "matter",
+        "original_global_index": 214,
+        "start": 100.55,
+        "end": 100.83,
+        "case": "success"
+    },
+    {
+        "word": "what",
+        "original_global_index": 215,
+        "start": 100.83,
+        "end": 101.21,
+        "case": "success"
+    },
+    {
+        "word": "you",
+        "original_global_index": 216,
+        "start": 101.34,
+        "end": 101.57000000000001,
+        "case": "success"
+    },
+    {
+        "word": "want",
+        "original_global_index": 217,
+        "start": 101.57,
+        "end": 101.82,
+        "case": "success"
+    },
+    {
+        "word": "to",
+        "original_global_index": 218,
+        "start": 101.83,
+        "end": 101.97,
+        "case": "success"
+    },
+    {
+        "word": "achieve",
+        "original_global_index": 219,
+        "start": 101.969999,
+        "end": 102.459999,
+        "case": "success"
+    },
+    {
+        "word": "in",
+        "original_global_index": 220,
+        "start": 102.469999,
+        "end": 102.709999,
+        "case": "success"
+    },
+    {
+        "word": "this",
+        "original_global_index": 221,
+        "start": 102.71000000000001,
+        "end": 102.99000000000001,
+        "case": "success"
+    },
+    {
+        "word": "world",
+        "original_global_index": 222,
+        "start": 102.99,
+        "end": 103.47,
+        "case": "success"
+    },
+    {
+        "word": "there\u2019s",
+        "original_global_index": 223,
+        "start": 103.469999,
+        "end": 103.859999,
+        "case": "success"
+    },
+    {
+        "word": "one",
+        "original_global_index": 224,
+        "start": 103.87,
+        "end": 104.34,
+        "case": "success"
+    },
+    {
+        "word": "thing",
+        "original_global_index": 225,
+        "start": 104.38,
+        "end": 104.71,
+        "case": "success"
+    },
+    {
+        "word": "you",
+        "original_global_index": 226,
+        "start": 104.719999,
+        "end": 104.939999,
+        "case": "success"
+    },
+    {
+        "word": "need,",
+        "original_global_index": 227,
+        "start": 104.95,
+        "end": 105.3,
+        "case": "success"
+    },
+    {
+        "word": "and",
+        "original_global_index": 228,
+        "start": 105.309999,
+        "end": 105.659999,
+        "case": "success"
+    },
+    {
+        "word": "only",
+        "original_global_index": 229,
+        "start": 105.73,
+        "end": 106.39,
+        "case": "success"
+    },
+    {
+        "word": "one",
+        "original_global_index": 230,
+        "start": 106.42,
+        "end": 106.95,
+        "case": "success"
+    },
+    {
+        "word": "thing",
+        "original_global_index": 231,
+        "start": 107.119999,
+        "end": 107.56999900000001,
+        "case": "success"
+    },
+    {
+        "word": "you",
+        "original_global_index": 232,
+        "start": 107.609999,
+        "end": 107.869999,
+        "case": "success"
+    },
+    {
+        "word": "need.",
+        "original_global_index": 233,
+        "start": 108.119999,
+        "end": 108.439999,
+        "case": "success"
+    },
+    {
+        "word": "Attention",
+        "original_global_index": 234,
+        "start": 110.03999900000001,
+        "end": 110.779999,
+        "case": "success"
+    },
+    {
+        "word": "is",
+        "original_global_index": 235,
+        "start": 111.56999900000001,
+        "end": 111.76999900000001,
+        "case": "success"
+    },
+    {
+        "word": "all",
+        "original_global_index": 236,
+        "start": 111.76999900000001,
+        "end": 111.919999,
+        "case": "success"
+    },
+    {
+        "word": "you",
+        "original_global_index": 237,
+        "start": 111.919999,
+        "end": 112.03999900000001,
+        "case": "success"
+    },
+    {
+        "word": "need.",
+        "original_global_index": 238,
+        "start": 112.03999900000001,
+        "end": 112.369999,
+        "case": "success"
+    }
+]
