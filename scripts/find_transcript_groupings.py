@@ -5,8 +5,6 @@ import string
 def clean_word(word):
     """
     Cleans a word by converting it to lowercase and removing punctuation.
-    This helps in matching words from the groupings file with the transcript file,
-    even if there are differences in capitalization or punctuation.
     """
     # Remove punctuation, but keep apostrophes for contractions like "you'll"
     translator = str.maketrans('', '', string.punctuation.replace("'", ""))
