@@ -1,14 +1,13 @@
-from find_transcript_groupings import clean_word, find_grouping_times
-import json
-import string
 import sys
-sys.path.extend(["./td-automated-text-layouts"])
+sys.path.extend(
+    ["C:/Projects/td-automated-text-layouts/scripts"])
+from find_transcript_groupings import clean_word, find_grouping_times  # nopep8
 # -----------------
 # USER PARAMETERS
 # -----------------
 # File paths for the transcript and word groupings
-transcript_filename = "./InputFiles/attentionIsAllYouNeed1_transcript.json"
-groupings_filename = "./InputFiles/attentionIsAllYouNeed1_groupings.txt"
+transcript_filename = "../input_files/attentionIsAllYouNeed1_transcript.json"
+groupings_filename = "../input_files/attentionIsAllYouNeed1_groupings.txt"
 
 # Font styling
 font_name = "Bahnschrift"
