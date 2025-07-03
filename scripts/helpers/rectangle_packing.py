@@ -57,6 +57,7 @@ def create_text_top(word_string, shelf_x, shelf_y, rotation):
 
         # pass through flip TOP
         flip_top = me.parent().create(td.flipTOP, "flip")
+        flip_top.viewer = True
         flip_top.setInputs([text_top])
         flip_top.par.flipy = 1
         flip_top.par.flop = 1
