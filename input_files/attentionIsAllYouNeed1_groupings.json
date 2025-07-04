@@ -1,0 +1,364 @@
+[
+    {
+        "group": "Attention is all you need.",
+        "animation_style": "group_swirl",
+        "options": [
+            "audioreactive_scale"
+        ]
+    },
+    {
+        "group": "These five words make up",
+        "animation_style": "word_basic",
+        "options": []
+    },
+    {
+        "group": "the title of the scientific paper",
+        "animation_style": "group_rectangular",
+        "options": [
+            "audioreactive_scale",
+            "invert_colors"
+        ]
+    },
+    {
+        "group": "that gave birth to",
+        "animation_style": "group_basic",
+        "options": []
+    },
+    {
+        "group": "large language models that power",
+        "animation_style": "group_swirl",
+        "options": [
+            "audioreactive_scale"
+        ]
+    },
+    {
+        "group": "ChatGPT, Claude, Copilot, and DeepSeek.",
+        "animation_style": "word_impact",
+        "options": []
+    },
+    {
+        "group": "5 simple words",
+        "animation_style": "group_basic",
+        "options": [
+            "audioreactive_scale",
+            "invert_colors"
+        ]
+    },
+    {
+        "group": "Attention is all you need.",
+        "animation_style": "group_rectangular",
+        "options": []
+    },
+    {
+        "group": "And now ChatGPT generates more than",
+        "animation_style": "group_swirl",
+        "options": [
+            "audioreactive_scale"
+        ]
+    },
+    {
+        "group": "a billion words per day.",
+        "animation_style": "word_basic",
+        "options": []
+    },
+    {
+        "group": "This is the story of those five magic words",
+        "animation_style": "word_impact",
+        "options": [
+            "audioreactive_scale",
+            "invert_colors"
+        ]
+    },
+    {
+        "group": "how they transformed artificial intelligence",
+        "animation_style": "group_basic",
+        "options": []
+    },
+    {
+        "group": "with one simple thing:",
+        "animation_style": "group_rectangular",
+        "options": [
+            "audioreactive_scale"
+        ]
+    },
+    {
+        "group": "The ability to pay attention.",
+        "animation_style": "group_swirl",
+        "options": []
+    },
+    {
+        "group": "I hope to hold your attention",
+        "animation_style": "word_basic",
+        "options": [
+            "audioreactive_scale",
+            "invert_colors"
+        ]
+    },
+    {
+        "group": "long enough to finish this story.",
+        "animation_style": "word_impact",
+        "options": []
+    },
+    {
+        "group": "If I can do that,",
+        "animation_style": "group_basic",
+        "options": [
+            "audioreactive_scale"
+        ]
+    },
+    {
+        "group": "I think you'll come away",
+        "animation_style": "group_rectangular",
+        "options": []
+    },
+    {
+        "group": "with a new appreciation",
+        "animation_style": "group_swirl",
+        "options": [
+            "audioreactive_scale",
+            "invert_colors"
+        ]
+    },
+    {
+        "group": "for attention itself",
+        "animation_style": "word_basic",
+        "options": []
+    },
+    {
+        "group": "be it artificial attention,",
+        "animation_style": "word_impact",
+        "options": [
+            "audioreactive_scale"
+        ]
+    },
+    {
+        "group": "human attention,",
+        "animation_style": "group_basic",
+        "options": []
+    },
+    {
+        "group": "your attention,",
+        "animation_style": "group_rectangular",
+        "options": [
+            "audioreactive_scale",
+            "invert_colors"
+        ]
+    },
+    {
+        "group": "mine,",
+        "animation_style": "group_swirl",
+        "options": []
+    },
+    {
+        "group": "or the kind of",
+        "animation_style": "word_basic",
+        "options": [
+            "audioreactive_scale"
+        ]
+    },
+    {
+        "group": "societal attention",
+        "animation_style": "word_impact",
+        "options": []
+    },
+    {
+        "group": "that's being given to",
+        "animation_style": "group_basic",
+        "options": [
+            "audioreactive_scale",
+            "invert_colors"
+        ]
+    },
+    {
+        "group": "artificial intelligence",
+        "animation_style": "group_rectangular",
+        "options": []
+    },
+    {
+        "group": "as it grows and spreads among us.",
+        "animation_style": "group_swirl",
+        "options": [
+            "audioreactive_scale"
+        ]
+    },
+    {
+        "group": "And look, if you're a",
+        "animation_style": "word_basic",
+        "options": []
+    },
+    {
+        "group": "human viewer,",
+        "animation_style": "word_impact",
+        "options": [
+            "audioreactive_scale",
+            "invert_colors"
+        ]
+    },
+    {
+        "group": "I know that your",
+        "animation_style": "group_basic",
+        "options": []
+    },
+    {
+        "group": "attention is a precious commodity.",
+        "animation_style": "group_rectangular",
+        "options": [
+            "audioreactive_scale"
+        ]
+    },
+    {
+        "group": "For humans like you,",
+        "animation_style": "group_swirl",
+        "options": []
+    },
+    {
+        "group": "attention takes time.",
+        "animation_style": "word_basic",
+        "options": [
+            "audioreactive_scale",
+            "invert_colors"
+        ]
+    },
+    {
+        "group": "It takes energy.",
+        "animation_style": "word_impact",
+        "options": []
+    },
+    {
+        "group": "If",
+        "animation_style": "group_basic",
+        "options": [
+            "audioreactive_scale"
+        ]
+    },
+    {
+        "group": "Attention is all you need",
+        "animation_style": "group_rectangular",
+        "options": []
+    },
+    {
+        "group": "was just",
+        "animation_style": "group_swirl",
+        "options": [
+            "audioreactive_scale",
+            "invert_colors"
+        ]
+    },
+    {
+        "group": "a story about computers,",
+        "animation_style": "word_basic",
+        "options": []
+    },
+    {
+        "group": "I wouldn't be",
+        "animation_style": "word_impact",
+        "options": [
+            "audioreactive_scale"
+        ]
+    },
+    {
+        "group": "bothering to tell it,",
+        "animation_style": "group_basic",
+        "options": []
+    },
+    {
+        "group": "and I wouldn't be",
+        "animation_style": "group_rectangular",
+        "options": [
+            "audioreactive_scale",
+            "invert_colors"
+        ]
+    },
+    {
+        "group": "asking you to invest the",
+        "animation_style": "group_swirl",
+        "options": []
+    },
+    {
+        "group": "time and energy.",
+        "animation_style": "word_basic",
+        "options": [
+            "audioreactive_scale"
+        ]
+    },
+    {
+        "group": "I think",
+        "animation_style": "word_impact",
+        "options": []
+    },
+    {
+        "group": "Attention is all you need",
+        "animation_style": "group_basic",
+        "options": [
+            "audioreactive_scale",
+            "invert_colors"
+        ]
+    },
+    {
+        "group": "is about more than computers.",
+        "animation_style": "group_rectangular",
+        "options": []
+    },
+    {
+        "group": "I think that no matter",
+        "animation_style": "group_swirl",
+        "options": [
+            "audioreactive_scale"
+        ]
+    },
+    {
+        "group": "who you are,",
+        "animation_style": "word_basic",
+        "options": []
+    },
+    {
+        "group": "no matter",
+        "animation_style": "word_impact",
+        "options": [
+            "audioreactive_scale",
+            "invert_colors"
+        ]
+    },
+    {
+        "group": "who you want to be,",
+        "animation_style": "group_basic",
+        "options": []
+    },
+    {
+        "group": "no matter",
+        "animation_style": "group_rectangular",
+        "options": [
+            "audioreactive_scale"
+        ]
+    },
+    {
+        "group": "what you want to achieve",
+        "animation_style": "group_swirl",
+        "options": []
+    },
+    {
+        "group": "in this world",
+        "animation_style": "word_basic",
+        "options": [
+            "audioreactive_scale",
+            "invert_colors"
+        ]
+    },
+    {
+        "group": "there's one thing you need,",
+        "animation_style": "word_impact",
+        "options": []
+    },
+    {
+        "group": "and only one thing you need.",
+        "animation_style": "group_basic",
+        "options": [
+            "audioreactive_scale"
+        ]
+    },
+    {
+        "group": "Attention is all you need.",
+        "animation_style": "group_rectangular",
+        "options": []
+    }
+]

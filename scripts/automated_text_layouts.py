@@ -1,18 +1,20 @@
 import td
+import json
 import sys
-# This allows the script to find your custom find_transcript_groupings.py file
-# Ensure the path is correct for your project structure.
 sys.path.extend(
     ["C:/Projects/td-automated-text-layouts/scripts"])
-from helpers.find_transcript_groupings import find_grouping_times  # nopep8
+from helpers.find_transcript_groupings import find_grouping_times, find_grouping_times_json  # nopep8
 # from helpers.layouts import basic_layout, rectangular_fit_layout  # nopep8
+
+# "animation_style": ["group_basic", "group_rectangular", "group_swirl", "word_basic", "word_impact"]
+# "options": ["audioreactive_scale, "invert_colors"]
 
 # -----------------
 # USER PARAMETERS
 # -----------------
 # File paths for the transcript and word groupings
 transcript_filename = "../input_files/attentionIsAllYouNeed1_transcript.json"
-groupings_filename = "../input_files/attentionIsAllYouNeed1_groupings.txt"
+groupings_filename = "../input_files/attentionIsAllYouNeed1_groupings.json"
 
 # Font styling
 FONT_NAME = "Bahnschrift"
@@ -28,11 +30,10 @@ NODES_PER_ROW = 4
 BASE_SPACING = 200
 TOP_SPACING = 200
 
-
 # Script assumes it is running from within the target parent container.
 parent = me.parent()
 FPS = project.cookRate  # FPS of the project
-LAST_FRAME = me.time.end  # Last frame of the project
+LAST_FRAME = me.time.end  # Last frame of the
 
 # -----------------
 # SCRIPT LOGIC
@@ -46,11 +47,14 @@ def create_text_layouts():
     """
 
     # Open the word groupings file and process each line
-    with open(groupings_filename, 'r') as f:
-        group_lines = f.readlines()
+    with open(groupings_filename, 'r', encoding='utf-8') as f:
+        grouping_data = json.load(f)
 
-    for i, line in enumerate(group_lines):
-        line = line.strip()  # Remove any leading/trailing whitespace
+    # set background
+    background = background_one(parent)
+
+    for i, item in enumerate(grouping_data):
+        line = item['group'].strip()  # Remove any leading/trailing whitespace
         if not line:
             continue
 
@@ -64,10 +68,6 @@ def create_text_layouts():
         base.nodeX = col * BASE_SPACING
         base.nodeY = row * -BASE_SPACING  # Use negative spacing to build downwards
 
-        # Internal position for operators inside Base COMP
-        internal_node_x = 0
-        internal_node_y = 0
-
         # Process the line to fit words within max_chars_per_line
         words = line.split()
         processed_lines = []
@@ -80,34 +80,14 @@ def create_text_layouts():
                 current_line += f" {word}" if current_line else word
         processed_lines.append(current_line)
 
-        # Create a Text TOP for each processed line
-        num_strings_in_list = len(processed_lines)
-        all_text_tops = []
-        for j, text_line in enumerate(processed_lines):
-            text_top = base.create(td.textTOP, f"text{j}")
-            text_top.viewer = True
-            text_top.par.text = text_line
-            text_top.par.font = FONT_NAME
-            text_top.par.typeface = FONT_TYPEFACE
-            text_top.par.fontsizex = FONT_SIZE
-            text_top.par.resolutionw = parent.par.w
-            text_top.par.resolutionh = parent.par.h / num_strings_in_list
-            text_top.nodeX = internal_node_x
-            text_top.nodeY = internal_node_y
-            internal_node_y -= TOP_SPACING
-            all_text_tops.append(text_top)
-
         # Create and configure the Layout TOP inside the Base COMP
-        layout = basic_layout(parent, base, all_text_tops)
-        internal_node_x += TOP_SPACING
-        layout.nodeX = internal_node_x
+        if (item['animation_style'] == 'group_basic'):
+            basic_layout(parent, base, processed_lines, item['options'])
+        else:
+            rectangular_fit_layout(
+                parent, base, processed_lines, item['options'])
 
-        # Create an Out TOP and connect Layout COMP as Input
-        out = base.create(td.outTOP, "out1")
-        out.viewer = True
-        out.setInputs([layout])
-        internal_node_x += TOP_SPACING
-        out.nodeX = internal_node_x
+        base.setInputs([background])
 
 
 def setup_animation():
@@ -158,8 +138,8 @@ def setup_animation():
     main_switch.par.index.expr = f"op('{index_out.name}')['index']"
 
 
-def parse_transcript():
-    matched_timings = find_grouping_times(
+def create_group_animations():
+    matched_timings = find_grouping_times_json(
         groupings_filename, transcript_filename)
 
     anim = op('mainAnimation')
@@ -182,23 +162,147 @@ def parse_transcript():
 # -----------------
 
 
-def basic_layout(parent, base, input_operators):
-    layout = base.create(layoutTOP, "layout")
+def basic_layout(parent, base, processed_lines, options):
+    # Internal position for operators inside Base COMP
+    internal_node_x = 0
+    internal_node_y = 0
+
+    # Create in TOP for background
+    in_top = base.create(td.inTOP, f"in1")
+    in_top.viewer = True
+    in_top.nodeY = internal_node_y
+    internal_node_x += TOP_SPACING
+    in_top.nodeX = internal_node_x
+    internal_node_y -= TOP_SPACING
+
+    # Create a Text TOP for each processed line
+    num_strings_in_list = len(processed_lines)
+    all_text_tops = []
+    for j, text_line in enumerate(processed_lines):
+        text_top = base.create(td.textTOP, f"text{j}")
+        text_top.viewer = True
+        text_top.par.text = text_line
+        text_top.par.font = FONT_NAME
+        text_top.par.typeface = FONT_TYPEFACE
+        text_top.par.fontsizex = FONT_SIZE
+        text_top.par.resolutionw = parent.par.w
+        text_top.par.resolutionh = parent.par.h / num_strings_in_list
+        text_top.nodeX = internal_node_x
+        text_top.nodeY = internal_node_y
+        internal_node_y -= TOP_SPACING
+        all_text_tops.append(text_top)
+
+    layout = base.create(td.layoutTOP, "layout")
     layout.viewer = True
     layout.par.resolutionw = parent.par.w
     layout.par.resolutionh = parent.par.h
     layout.par.scaleres = 1  # Scale Resolution to Fit
     layout.par.align = 3     # Align: Top to Bottom
     layout.par.fit = 3       # Fit: Fit Best
+    internal_node_x += TOP_SPACING
+    layout.nodeX = internal_node_x
 
     # Connect all Text TOPs to the Layout TOP
-    layout.setInputs(input_operators)
+    layout.setInputs(all_text_tops)
 
-    return layout
+    # Create a composite and level TOP
+    comp_top = base.create(td.compositeTOP, "comp1")
+    comp_top.setInputs([in_top, layout])
+    comp_top.par.operand = 0
+    internal_node_x += TOP_SPACING
+    comp_top.nodeX = internal_node_x
 
+    level_top = base.create(td.levelTOP, "level1")
+    if ("invert_colors" in options):
+        level_top.par.invert = 1
+    level_top.setInputs([comp_top])
+    internal_node_x += TOP_SPACING
+    level_top.nodeX = internal_node_x
 
-def rectangular_fit_layout(parent, inputs):
+    # Create an Out TOP and connect Layout TOP as Input
+    out = base.create(td.outTOP, "out1")
+    out.viewer = True
+    out.setInputs([level_top])
+    internal_node_x += TOP_SPACING
+    out.nodeX = internal_node_x
+
     return
+
+
+def rectangular_fit_layout(parent, base, processed_lines, options):
+    # Internal position for operators inside Base COMP
+    internal_node_x = 0
+    internal_node_y = 0
+
+    # Create in TOP for background
+    in_top = base.create(td.inTOP, f"in1")
+    in_top.viewer = True
+    in_top.nodeY = internal_node_y
+    internal_node_x += TOP_SPACING
+    in_top.nodeX = internal_node_x
+    internal_node_y -= TOP_SPACING
+
+    ## PLACEHOLDER - CHANGE LATER ##
+    text_top = base.create(td.textTOP, f"text0")
+    text_top.viewer = True
+    text_top.par.text = "TEMP"
+    text_top.par.font = FONT_NAME
+    text_top.par.typeface = FONT_TYPEFACE
+    text_top.par.fontsizex = FONT_SIZE
+    text_top.par.resolutionw = parent.par.w
+    text_top.par.resolutionh = parent.par.h
+    text_top.nodeX = internal_node_x
+    text_top.nodeY = internal_node_y
+    internal_node_y -= TOP_SPACING
+
+    # Create a composite and level TOP
+    comp_top = base.create(td.compositeTOP, "comp1")
+    comp_top.setInputs([in_top, text_top])
+    comp_top.par.operand = 0
+    internal_node_x += TOP_SPACING
+    comp_top.nodeX = internal_node_x
+
+    level_top = base.create(td.levelTOP, "level1")
+    if ("invert_colors" in options):
+        level_top.par.invert = 1
+    level_top.setInputs([comp_top])
+    internal_node_x += TOP_SPACING
+    level_top.nodeX = internal_node_x
+
+    # Create an Out TOP and connect Layout TOP as Input
+    out = base.create(td.outTOP, "out1")
+    out.viewer = True
+    out.setInputs([level_top])
+    internal_node_x += TOP_SPACING
+    out.nodeX = internal_node_x
+
+    # Create an Out TOP and connect Layout TOP as Input
+    out = base.create(td.outTOP, "out1")
+    out.viewer = True
+    out.setInputs([text_top])
+    internal_node_x += TOP_SPACING
+    out.nodeX = internal_node_x
+
+    return
+
+# -----------------
+# BACKGROUNDS
+# -----------------
+
+
+def background_one(parent):
+    noise = parent.create(td.noiseTOP, 'bg1')
+    noise.viewer = True
+    noise.par.period = 1.74
+    noise.par.harmon = 5
+    noise.par.spread = 0.8
+    noise.par.gain = 1.34
+    noise.par.exp = 2.72
+    noise.par.mono = 0
+    noise.par.resolutionw = parent.par.w
+    noise.par.resolutionh = parent.par.h
+    noise.nodeX = -BASE_SPACING
+    return noise
 
 
 # -----------------
@@ -211,6 +315,7 @@ old_components.extend(parent.findChildren(name="group*"))
 old_components.extend(parent.findChildren(name="mainSwitch"))
 old_components.extend(parent.findChildren(name="mainAnimation"))
 old_components.extend(parent.findChildren(name="index_out"))
+old_components.extend(parent.findChildren(name="bg*"))
 for op_object in old_components:
     op_object.destroy()
 
@@ -222,6 +327,6 @@ print("Setting up main animation switch...")
 setup_animation()
 
 print("Loading transcript into animation...")
-parse_transcript()
+create_group_animations()
 
 print("Script finished.")
