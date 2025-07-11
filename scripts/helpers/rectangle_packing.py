@@ -9,6 +9,9 @@ FONT_NAME = "Bahnschrift"
 FONT_TYPEFACE = "Regular"
 FONT_SIZE = 130
 
+NODE_SPACE_X = 200
+NODE_SPACE_Y = 150
+
 
 def get_word_dimensions(word_string):
     """
@@ -16,7 +19,8 @@ def get_word_dimensions(word_string):
     2. Set its 'text' parameter to word_string.
     3. Use an Info CHOP to get the 'text_width' and 'text_height'.
     """
-    text_top = me.parent().create(td.textTOP, "temp_text")
+    base = op('base1')
+    text_top = base.create(td.textTOP, "temp_text")
     text_top.par.text = word_string
     text_top.par.font = FONT_NAME
     text_top.par.typeface = FONT_TYPEFACE
@@ -24,7 +28,7 @@ def get_word_dimensions(word_string):
     text_top.par.resolutionw = container_w
     text_top.par.resolutionh = container_h
 
-    info_chop = me.parent().create(td.infoCHOP, "temp_info")
+    info_chop = base.create(td.infoCHOP, "temp_info")
     info_chop.par.op = text_top.name
     width = float(info_chop['text_width'])
     height = float(info_chop['text_height'])
@@ -36,7 +40,9 @@ def get_word_dimensions(word_string):
 
 
 def create_text_top(word_string, shelf_x, shelf_y, rotation):
-    text_top = me.parent().create(td.textTOP, "text")
+    base = op('base1')
+    text_top = base.create(td.textTOP, "text")
+    text_top.nodeX = 0
     text_top.viewer = True
     text_top.par.text = word_string
     text_top.par.font = FONT_NAME
@@ -56,7 +62,8 @@ def create_text_top(word_string, shelf_x, shelf_y, rotation):
         text_top.par.resolutionh = container_w
 
         # pass through flip TOP
-        flip_top = me.parent().create(td.flipTOP, "flip")
+        flip_top = base.create(td.flipTOP, "flip")
+        flip_top.nodeX = 200
         flip_top.viewer = True
         flip_top.setInputs([text_top])
         flip_top.par.flipy = 1
@@ -82,6 +89,7 @@ def pack_words_generatively(words_to_pack, container_width, container_height, pa
         list: A list of dictionaries, each containing the word, its calculated
               position (x, y), and rotation (0 or 90).
     """
+    base = op('base1')
     placed_words = []
     text_tops = []
 
@@ -170,6 +178,23 @@ def pack_words_generatively(words_to_pack, container_width, container_height, pa
                 # Give up on this word and move to the next.
                 words_queue.pop(0)
 
+    # Composite text TOPs together
+    comp = base.create(td.compositeTOP, "comp1")
+    comp.nodeX = 400
+    comp.viewer = True
+    comp.par.resolutionw = container_w
+    comp.par.resolutionh = container_h
+    comp.par.operand = 31
+    comp.setInputs(text_tops)
+
+    # create Out TOP
+    out = base.create(td.outTOP, "out1")
+    out.nodeX = 600
+    out.viewer = True
+    out.par.resolutionw = container_w
+    out.par.resolutionh = container_h
+    out.setInputs([comp])
+
     return placed_words
 
 
@@ -177,6 +202,8 @@ def pack_words_generatively(words_to_pack, container_width, container_height, pa
 # EXECUTION
 # --------
 print(my_words)
+
+me.parent().create(baseCOMP, "base1")
 
 layout = pack_words_generatively(
     my_words, container_w, container_h, padding=15)
