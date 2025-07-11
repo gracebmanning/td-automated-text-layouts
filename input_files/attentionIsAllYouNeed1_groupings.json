@@ -9,14 +9,15 @@
     {
         "group": "These five words make up",
         "animation_style": "word_basic",
-        "options": []
+        "options": [
+            "invert_colors"
+        ]
     },
     {
         "group": "the title of the scientific paper",
         "animation_style": "group_rectangular",
         "options": [
-            "audioreactive_scale",
-            "invert_colors"
+            "audioreactive_scale"
         ]
     },
     {
@@ -47,7 +48,9 @@
     {
         "group": "Attention is all you need.",
         "animation_style": "group_rectangular",
-        "options": []
+        "options": [
+            "invert_colors"
+        ]
     },
     {
         "group": "And now ChatGPT generates more than",
@@ -65,8 +68,7 @@
         "group": "This is the story of those five magic words",
         "animation_style": "word_impact",
         "options": [
-            "audioreactive_scale",
-            "invert_colors"
+            "audioreactive_scale"
         ]
     },
     {
@@ -84,14 +86,15 @@
     {
         "group": "The ability to pay attention.",
         "animation_style": "group_swirl",
-        "options": []
+        "options": [
+            "invert_colors"
+        ]
     },
     {
         "group": "I hope to hold your attention",
         "animation_style": "word_basic",
         "options": [
-            "audioreactive_scale",
-            "invert_colors"
+            "audioreactive_scale"
         ]
     },
     {
@@ -134,15 +137,15 @@
     {
         "group": "human attention,",
         "animation_style": "group_basic",
-        "options": []
-    },
-    {
-        "group": "your attention,",
-        "animation_style": "group_rectangular",
         "options": [
             "audioreactive_scale",
             "invert_colors"
         ]
+    },
+    {
+        "group": "your attention,",
+        "animation_style": "group_rectangular",
+        "options": []
     },
     {
         "group": "mine,",
@@ -284,15 +287,15 @@
     {
         "group": "I think",
         "animation_style": "word_impact",
-        "options": []
-    },
-    {
-        "group": "Attention is all you need",
-        "animation_style": "group_basic",
         "options": [
             "audioreactive_scale",
             "invert_colors"
         ]
+    },
+    {
+        "group": "Attention is all you need",
+        "animation_style": "group_basic",
+        "options": []
     },
     {
         "group": "is about more than computers.",
@@ -328,7 +331,8 @@
         "group": "no matter",
         "animation_style": "group_rectangular",
         "options": [
-            "audioreactive_scale"
+            "audioreactive_scale",
+            "invert_colors"
         ]
     },
     {
@@ -340,8 +344,7 @@
         "group": "in this world",
         "animation_style": "word_basic",
         "options": [
-            "audioreactive_scale",
-            "invert_colors"
+            "audioreactive_scale"
         ]
     },
     {
