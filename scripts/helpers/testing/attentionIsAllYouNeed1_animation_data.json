@@ -1,0 +1,1794 @@
+[
+    {
+        "group": "Attention is all you need.",
+        "animation_style": "group_swirl",
+        "options": [
+            "audioreactive_scale"
+        ],
+        "start_time": 1.58,
+        "end_time": 4.21,
+        "words": [
+            {
+                "word": "Attention",
+                "start": 1.58,
+                "end": 2.2800000000000002
+            },
+            {
+                "word": "is",
+                "start": 2.33,
+                "end": 2.67
+            },
+            {
+                "word": "all",
+                "start": 2.7,
+                "end": 3.1500000000000004
+            },
+            {
+                "word": "you",
+                "start": 3.2,
+                "end": 3.5500000000000003
+            },
+            {
+                "word": "need.",
+                "start": 3.56,
+                "end": 4.21
+            }
+        ]
+    },
+    {
+        "group": "These five words make up",
+        "animation_style": "word_basic",
+        "options": [
+            "invert_colors"
+        ],
+        "start_time": 4.7,
+        "end_time": 6.300000000000001,
+        "words": [
+            {
+                "word": "These",
+                "start": 4.7,
+                "end": 5.13
+            },
+            {
+                "word": "five",
+                "start": 5.13,
+                "end": 5.5
+            },
+            {
+                "word": "words",
+                "start": 5.5,
+                "end": 5.88
+            },
+            {
+                "word": "make",
+                "start": 5.88,
+                "end": 6.14
+            },
+            {
+                "word": "up",
+                "start": 6.15,
+                "end": 6.300000000000001
+            }
+        ]
+    },
+    {
+        "group": "the title of the scientific paper",
+        "animation_style": "group_rectangular",
+        "options": [
+            "audioreactive_scale"
+        ],
+        "start_time": 6.3,
+        "end_time": 8.27,
+        "words": [
+            {
+                "word": "the",
+                "start": 6.3,
+                "end": 6.43
+            },
+            {
+                "word": "title",
+                "start": 6.44,
+                "end": 6.890000000000001
+            },
+            {
+                "word": "of",
+                "start": 6.92,
+                "end": 7.09
+            },
+            {
+                "word": "the",
+                "start": 7.09,
+                "end": 7.25
+            },
+            {
+                "word": "scientific",
+                "start": 7.26,
+                "end": 7.89
+            },
+            {
+                "word": "paper",
+                "start": 7.89,
+                "end": 8.27
+            }
+        ]
+    },
+    {
+        "group": "that gave birth to",
+        "animation_style": "group_basic",
+        "options": [],
+        "start_time": 8.27,
+        "end_time": 9.33,
+        "words": [
+            {
+                "word": "that",
+                "start": 8.27,
+                "end": 8.53
+            },
+            {
+                "word": "gave",
+                "start": 8.53,
+                "end": 8.78
+            },
+            {
+                "word": "birth",
+                "start": 8.8,
+                "end": 9.15
+            },
+            {
+                "word": "to",
+                "start": 9.15,
+                "end": 9.33
+            }
+        ]
+    },
+    {
+        "group": "large language models that power",
+        "animation_style": "group_swirl",
+        "options": [
+            "audioreactive_scale"
+        ],
+        "start_time": 9.33,
+        "end_time": 12.120000000000001,
+        "words": [
+            {
+                "word": "large",
+                "start": 9.33,
+                "end": 9.69
+            },
+            {
+                "word": "language",
+                "start": 9.75,
+                "end": 10.24
+            },
+            {
+                "word": "models",
+                "start": 10.27,
+                "end": 10.889999999999999
+            },
+            {
+                "word": "that",
+                "start": 11.07,
+                "end": 11.41
+            },
+            {
+                "word": "power",
+                "start": 11.57,
+                "end": 12.120000000000001
+            }
+        ]
+    },
+    {
+        "group": "ChatGPT, Claude, Copilot, and DeepSeek.",
+        "animation_style": "word_impact",
+        "options": [],
+        "start_time": 12.139999,
+        "end_time": 16.04,
+        "words": [
+            {
+                "word": "ChatGPT,",
+                "start": 12.139999,
+                "end": 12.489999
+            },
+            {
+                "word": "Claude,",
+                "start": 13.58,
+                "end": 14.09
+            },
+            {
+                "word": "Copilot,",
+                "start": 14.13,
+                "end": 14.82
+            },
+            {
+                "word": "and",
+                "start": 14.87,
+                "end": 15.29
+            },
+            {
+                "word": "DeepSeek.",
+                "start": 15.33,
+                "end": 16.04
+            }
+        ]
+    },
+    {
+        "group": "5 simple words",
+        "animation_style": "group_basic",
+        "options": [
+            "audioreactive_scale",
+            "invert_colors"
+        ],
+        "start_time": 16.799999,
+        "end_time": 18.84,
+        "words": [
+            {
+                "word": "5",
+                "start": 16.799999,
+                "end": 17.319999
+            },
+            {
+                "word": "simple",
+                "start": 17.82,
+                "end": 18.19
+            },
+            {
+                "word": "words",
+                "start": 18.2,
+                "end": 18.84
+            }
+        ]
+    },
+    {
+        "group": "Attention is all you need.",
+        "animation_style": "group_rectangular",
+        "options": [
+            "invert_colors"
+        ],
+        "start_time": 19.27,
+        "end_time": 21.48,
+        "words": [
+            {
+                "word": "Attention",
+                "start": 19.27,
+                "end": 19.99
+            },
+            {
+                "word": "is",
+                "start": 20.42,
+                "end": 20.64
+            },
+            {
+                "word": "all",
+                "start": 20.64,
+                "end": 20.86
+            },
+            {
+                "word": "you",
+                "start": 20.86,
+                "end": 21.02
+            },
+            {
+                "word": "need.",
+                "start": 21.02,
+                "end": 21.48
+            }
+        ]
+    },
+    {
+        "group": "And now ChatGPT generates more than",
+        "animation_style": "group_swirl",
+        "options": [
+            "audioreactive_scale"
+        ],
+        "start_time": 21.990000000000002,
+        "end_time": 24.89,
+        "words": [
+            {
+                "word": "And",
+                "start": 21.990000000000002,
+                "end": 22.220000000000002
+            },
+            {
+                "word": "now",
+                "start": 22.22,
+                "end": 22.669999999999998
+            },
+            {
+                "word": "ChatGPT",
+                "start": 23.12,
+                "end": 23.75
+            },
+            {
+                "word": "generates",
+                "start": 23.75,
+                "end": 24.33
+            },
+            {
+                "word": "more",
+                "start": 24.33,
+                "end": 24.599999999999998
+            },
+            {
+                "word": "than",
+                "start": 24.6,
+                "end": 24.89
+            }
+        ]
+    },
+    {
+        "group": "a billion words per day.",
+        "animation_style": "word_basic",
+        "options": [],
+        "start_time": 24.91,
+        "end_time": 27.009999999999998,
+        "words": [
+            {
+                "word": "a",
+                "start": 24.91,
+                "end": 25.13
+            },
+            {
+                "word": "billion",
+                "start": 25.14,
+                "end": 25.78
+            },
+            {
+                "word": "words",
+                "start": 25.79,
+                "end": 26.259999999999998
+            },
+            {
+                "word": "per",
+                "start": 26.27,
+                "end": 26.47
+            },
+            {
+                "word": "day.",
+                "start": 26.47,
+                "end": 27.009999999999998
+            }
+        ]
+    },
+    {
+        "group": "This is the story of those five magic words",
+        "animation_style": "word_impact",
+        "options": [
+            "audioreactive_scale"
+        ],
+        "start_time": 27.5,
+        "end_time": 31.04,
+        "words": [
+            {
+                "word": "This",
+                "start": 27.5,
+                "end": 27.91
+            },
+            {
+                "word": "is",
+                "start": 27.929999000000002,
+                "end": 28.159999000000003
+            },
+            {
+                "word": "the",
+                "start": 28.189999999999998,
+                "end": 28.339999999999996
+            },
+            {
+                "word": "story",
+                "start": 28.34,
+                "end": 28.91
+            },
+            {
+                "word": "of",
+                "start": 28.91,
+                "end": 29.06
+            },
+            {
+                "word": "those",
+                "start": 29.059998999999998,
+                "end": 29.329998999999997
+            },
+            {
+                "word": "five",
+                "start": 29.34,
+                "end": 29.86
+            },
+            {
+                "word": "magic",
+                "start": 29.9,
+                "end": 30.32
+            },
+            {
+                "word": "words",
+                "start": 30.33,
+                "end": 31.04
+            }
+        ]
+    },
+    {
+        "group": "how they transformed artificial intelligence",
+        "animation_style": "group_basic",
+        "options": [],
+        "start_time": 31.11,
+        "end_time": 33.959999,
+        "words": [
+            {
+                "word": "how",
+                "start": 31.11,
+                "end": 31.43
+            },
+            {
+                "word": "they",
+                "start": 31.429999000000002,
+                "end": 31.739999
+            },
+            {
+                "word": "transformed",
+                "start": 31.78,
+                "end": 32.65
+            },
+            {
+                "word": "artificial",
+                "start": 32.67,
+                "end": 33.260000000000005
+            },
+            {
+                "word": "intelligence",
+                "start": 33.259999,
+                "end": 33.959999
+            }
+        ]
+    },
+    {
+        "group": "with one simple thing:",
+        "animation_style": "group_rectangular",
+        "options": [
+            "audioreactive_scale"
+        ],
+        "start_time": 33.969999,
+        "end_time": 35.909999,
+        "words": [
+            {
+                "word": "with",
+                "start": 33.969999,
+                "end": 34.219999
+            },
+            {
+                "word": "one",
+                "start": 34.25,
+                "end": 34.8
+            },
+            {
+                "word": "simple",
+                "start": 34.809999000000005,
+                "end": 35.279999000000004
+            },
+            {
+                "word": "thing:",
+                "start": 35.299999,
+                "end": 35.909999
+            }
+        ]
+    },
+    {
+        "group": "The ability to pay attention.",
+        "animation_style": "group_swirl",
+        "options": [
+            "invert_colors"
+        ],
+        "start_time": 36.879999,
+        "end_time": 38.6,
+        "words": [
+            {
+                "word": "The",
+                "start": 36.879999,
+                "end": 37.069998999999996
+            },
+            {
+                "word": "ability",
+                "start": 37.07,
+                "end": 37.61
+            },
+            {
+                "word": "to",
+                "start": 37.61,
+                "end": 37.769999999999996
+            },
+            {
+                "word": "pay",
+                "start": 37.769999999999996,
+                "end": 38.0
+            },
+            {
+                "word": "attention.",
+                "start": 38.07,
+                "end": 38.6
+            }
+        ]
+    },
+    {
+        "group": "I hope to hold your attention",
+        "animation_style": "word_basic",
+        "options": [
+            "audioreactive_scale"
+        ],
+        "start_time": 39.64,
+        "end_time": 41.720000000000006,
+        "words": [
+            {
+                "word": "I",
+                "start": 39.64,
+                "end": 39.97
+            },
+            {
+                "word": "hope",
+                "start": 40.13,
+                "end": 40.440000000000005
+            },
+            {
+                "word": "to",
+                "start": 40.47,
+                "end": 40.69
+            },
+            {
+                "word": "hold",
+                "start": 40.69,
+                "end": 41.01
+            },
+            {
+                "word": "your",
+                "start": 41.01,
+                "end": 41.169999999999995
+            },
+            {
+                "word": "attention",
+                "start": 41.2,
+                "end": 41.720000000000006
+            }
+        ]
+    },
+    {
+        "group": "long enough to finish this story.",
+        "animation_style": "word_impact",
+        "options": [],
+        "start_time": 41.72,
+        "end_time": 43.81,
+        "words": [
+            {
+                "word": "long",
+                "start": 41.72,
+                "end": 42.019999999999996
+            },
+            {
+                "word": "enough",
+                "start": 42.019999999999996,
+                "end": 42.349999999999994
+            },
+            {
+                "word": "to",
+                "start": 42.38,
+                "end": 42.67
+            },
+            {
+                "word": "finish",
+                "start": 42.67,
+                "end": 43.050000000000004
+            },
+            {
+                "word": "this",
+                "start": 43.05,
+                "end": 43.23
+            },
+            {
+                "word": "story.",
+                "start": 43.24,
+                "end": 43.81
+            }
+        ]
+    },
+    {
+        "group": "If I can do that,",
+        "animation_style": "group_basic",
+        "options": [
+            "audioreactive_scale"
+        ],
+        "start_time": 44.230000000000004,
+        "end_time": 45.33,
+        "words": [
+            {
+                "word": "If",
+                "start": 44.230000000000004,
+                "end": 44.480000000000004
+            },
+            {
+                "word": "I",
+                "start": 44.5,
+                "end": 44.66
+            },
+            {
+                "word": "can",
+                "start": 44.66,
+                "end": 44.83
+            },
+            {
+                "word": "do",
+                "start": 44.83,
+                "end": 45.019999999999996
+            },
+            {
+                "word": "that,",
+                "start": 45.019999999999996,
+                "end": 45.33
+            }
+        ]
+    },
+    {
+        "group": "I think you'll come away",
+        "animation_style": "group_rectangular",
+        "options": [],
+        "start_time": 45.34,
+        "end_time": 46.93000000000001,
+        "words": [
+            {
+                "word": "I",
+                "start": 45.34,
+                "end": 45.68000000000001
+            },
+            {
+                "word": "think",
+                "start": 45.769999999999996,
+                "end": 46.04
+            },
+            {
+                "word": "you\u2019ll",
+                "start": 46.05,
+                "end": 46.349999999999994
+            },
+            {
+                "word": "come",
+                "start": 46.349999,
+                "end": 46.589999
+            },
+            {
+                "word": "away",
+                "start": 46.59,
+                "end": 46.93000000000001
+            }
+        ]
+    },
+    {
+        "group": "with a new appreciation",
+        "animation_style": "group_swirl",
+        "options": [
+            "audioreactive_scale",
+            "invert_colors"
+        ],
+        "start_time": 46.929999,
+        "end_time": 48.300000000000004,
+        "words": [
+            {
+                "word": "with",
+                "start": 46.929999,
+                "end": 47.139999
+            },
+            {
+                "word": "a",
+                "start": 47.15,
+                "end": 47.269999999999996
+            },
+            {
+                "word": "new",
+                "start": 47.269999999999996,
+                "end": 47.48
+            },
+            {
+                "word": "appreciation",
+                "start": 47.480000000000004,
+                "end": 48.300000000000004
+            }
+        ]
+    },
+    {
+        "group": "for attention itself",
+        "animation_style": "word_basic",
+        "options": [],
+        "start_time": 48.3,
+        "end_time": 49.959999999999994,
+        "words": [
+            {
+                "word": "for",
+                "start": 48.3,
+                "end": 48.61
+            },
+            {
+                "word": "attention",
+                "start": 48.63,
+                "end": 49.11
+            },
+            {
+                "word": "itself",
+                "start": 49.16,
+                "end": 49.959999999999994
+            }
+        ]
+    },
+    {
+        "group": "be it artificial attention,",
+        "animation_style": "word_impact",
+        "options": [
+            "audioreactive_scale"
+        ],
+        "start_time": 50.179999,
+        "end_time": 51.970000000000006,
+        "words": [
+            {
+                "word": "be",
+                "start": 50.179999,
+                "end": 50.459999
+            },
+            {
+                "word": "it",
+                "start": 50.46,
+                "end": 50.69
+            },
+            {
+                "word": "artificial",
+                "start": 50.79,
+                "end": 51.38
+            },
+            {
+                "word": "attention,",
+                "start": 51.38,
+                "end": 51.970000000000006
+            }
+        ]
+    },
+    {
+        "group": "human attention,",
+        "animation_style": "group_basic",
+        "options": [
+            "audioreactive_scale",
+            "invert_colors"
+        ],
+        "start_time": 52.35,
+        "end_time": 53.649999,
+        "words": [
+            {
+                "word": "human",
+                "start": 52.35,
+                "end": 52.84
+            },
+            {
+                "word": "attention,",
+                "start": 52.869999,
+                "end": 53.649999
+            }
+        ]
+    },
+    {
+        "group": "your attention,",
+        "animation_style": "group_rectangular",
+        "options": [],
+        "start_time": 53.719999,
+        "end_time": 55.04,
+        "words": [
+            {
+                "word": "your",
+                "start": 53.719999,
+                "end": 54.219999
+            },
+            {
+                "word": "attention,",
+                "start": 54.22,
+                "end": 55.04
+            }
+        ]
+    },
+    {
+        "group": "mine,",
+        "animation_style": "group_swirl",
+        "options": [],
+        "start_time": 55.49,
+        "end_time": 56.07,
+        "words": [
+            {
+                "word": "mine,",
+                "start": 55.49,
+                "end": 56.07
+            }
+        ]
+    },
+    {
+        "group": "or the kind of",
+        "animation_style": "word_basic",
+        "options": [
+            "audioreactive_scale"
+        ],
+        "start_time": 56.88,
+        "end_time": 58.120000000000005,
+        "words": [
+            {
+                "word": "or",
+                "start": 56.88,
+                "end": 57.440000000000005
+            },
+            {
+                "word": "the",
+                "start": 57.49,
+                "end": 57.71
+            },
+            {
+                "word": "kind",
+                "start": 57.72,
+                "end": 57.99
+            },
+            {
+                "word": "of",
+                "start": 57.99,
+                "end": 58.120000000000005
+            }
+        ]
+    },
+    {
+        "group": "societal attention",
+        "animation_style": "word_impact",
+        "options": [],
+        "start_time": 58.12,
+        "end_time": 59.160000000000004,
+        "words": [
+            {
+                "word": "societal",
+                "start": 58.12,
+                "end": 58.699999999999996
+            },
+            {
+                "word": "attention",
+                "start": 58.7,
+                "end": 59.160000000000004
+            }
+        ]
+    },
+    {
+        "group": "that's being given to",
+        "animation_style": "group_basic",
+        "options": [
+            "audioreactive_scale",
+            "invert_colors"
+        ],
+        "start_time": 59.16,
+        "end_time": 60.3,
+        "words": [
+            {
+                "word": "that\u2019s",
+                "start": 59.16,
+                "end": 59.47
+            },
+            {
+                "word": "being",
+                "start": 59.47,
+                "end": 59.76
+            },
+            {
+                "word": "given",
+                "start": 59.769999999999996,
+                "end": 60.05
+            },
+            {
+                "word": "to",
+                "start": 60.05,
+                "end": 60.3
+            }
+        ]
+    },
+    {
+        "group": "artificial intelligence",
+        "animation_style": "group_rectangular",
+        "options": [],
+        "start_time": 60.31,
+        "end_time": 61.48,
+        "words": [
+            {
+                "word": "artificial",
+                "start": 60.31,
+                "end": 60.870000000000005
+            },
+            {
+                "word": "intelligence",
+                "start": 60.87,
+                "end": 61.48
+            }
+        ]
+    },
+    {
+        "group": "as it grows and spreads among us.",
+        "animation_style": "group_swirl",
+        "options": [
+            "audioreactive_scale"
+        ],
+        "start_time": 61.53,
+        "end_time": 64.06,
+        "words": [
+            {
+                "word": "as",
+                "start": 61.53,
+                "end": 61.85
+            },
+            {
+                "word": "it",
+                "start": 61.88,
+                "end": 62.09
+            },
+            {
+                "word": "grows",
+                "start": 62.09,
+                "end": 62.52
+            },
+            {
+                "word": "and",
+                "start": 62.55,
+                "end": 62.79
+            },
+            {
+                "word": "spreads",
+                "start": 62.79,
+                "end": 63.28
+            },
+            {
+                "word": "among",
+                "start": 63.33,
+                "end": 63.65
+            },
+            {
+                "word": "us.",
+                "start": 63.65,
+                "end": 64.06
+            }
+        ]
+    },
+    {
+        "group": "And look, if you're a",
+        "animation_style": "word_basic",
+        "options": [],
+        "start_time": 65.37,
+        "end_time": 67.23,
+        "words": [
+            {
+                "word": "And",
+                "start": 65.37,
+                "end": 65.59
+            },
+            {
+                "word": "look,",
+                "start": 65.59,
+                "end": 65.99000000000001
+            },
+            {
+                "word": "if",
+                "start": 66.719999,
+                "end": 66.919999
+            },
+            {
+                "word": "you\u2019re",
+                "start": 66.92,
+                "end": 67.17
+            },
+            {
+                "word": "a",
+                "start": 67.17,
+                "end": 67.23
+            }
+        ]
+    },
+    {
+        "group": "human viewer,",
+        "animation_style": "word_impact",
+        "options": [
+            "audioreactive_scale",
+            "invert_colors"
+        ],
+        "start_time": 67.23,
+        "end_time": 68.27000000000001,
+        "words": [
+            {
+                "word": "human",
+                "start": 67.23,
+                "end": 67.64
+            },
+            {
+                "word": "viewer,",
+                "start": 67.65,
+                "end": 68.27000000000001
+            }
+        ]
+    },
+    {
+        "group": "I know that your",
+        "animation_style": "group_basic",
+        "options": [],
+        "start_time": 68.53,
+        "end_time": 69.97999999999999,
+        "words": [
+            {
+                "word": "I",
+                "start": 68.53,
+                "end": 68.91
+            },
+            {
+                "word": "know",
+                "start": 68.92,
+                "end": 69.4
+            },
+            {
+                "word": "that",
+                "start": 69.41,
+                "end": 69.66
+            },
+            {
+                "word": "your",
+                "start": 69.66,
+                "end": 69.97999999999999
+            }
+        ]
+    },
+    {
+        "group": "attention is a precious commodity.",
+        "animation_style": "group_rectangular",
+        "options": [
+            "audioreactive_scale"
+        ],
+        "start_time": 69.99,
+        "end_time": 72.019999,
+        "words": [
+            {
+                "word": "attention",
+                "start": 69.99,
+                "end": 70.50999999999999
+            },
+            {
+                "word": "is",
+                "start": 70.539999,
+                "end": 70.709999
+            },
+            {
+                "word": "a",
+                "start": 70.709999,
+                "end": 70.86999899999999
+            },
+            {
+                "word": "precious",
+                "start": 70.889999,
+                "end": 71.279999
+            },
+            {
+                "word": "commodity.",
+                "start": 71.279999,
+                "end": 72.019999
+            }
+        ]
+    },
+    {
+        "group": "For humans like you,",
+        "animation_style": "group_swirl",
+        "options": [],
+        "start_time": 72.99,
+        "end_time": 74.269999,
+        "words": [
+            {
+                "word": "For",
+                "start": 72.99,
+                "end": 73.3
+            },
+            {
+                "word": "humans",
+                "start": 73.299999,
+                "end": 73.689999
+            },
+            {
+                "word": "like",
+                "start": 73.799999,
+                "end": 73.989999
+            },
+            {
+                "word": "you,",
+                "start": 73.989999,
+                "end": 74.269999
+            }
+        ]
+    },
+    {
+        "group": "attention takes time.",
+        "animation_style": "word_basic",
+        "options": [
+            "audioreactive_scale",
+            "invert_colors"
+        ],
+        "start_time": 74.45,
+        "end_time": 76.2,
+        "words": [
+            {
+                "word": "attention",
+                "start": 74.45,
+                "end": 75.08
+            },
+            {
+                "word": "takes",
+                "start": 75.09,
+                "end": 75.56
+            },
+            {
+                "word": "time.",
+                "start": 75.61,
+                "end": 76.2
+            }
+        ]
+    },
+    {
+        "group": "It takes energy.",
+        "animation_style": "word_impact",
+        "options": [],
+        "start_time": 76.89,
+        "end_time": 78.2,
+        "words": [
+            {
+                "word": "It",
+                "start": 76.89,
+                "end": 77.08
+            },
+            {
+                "word": "takes",
+                "start": 77.09,
+                "end": 77.53
+            },
+            {
+                "word": "energy.",
+                "start": 77.64,
+                "end": 78.2
+            }
+        ]
+    },
+    {
+        "group": "If",
+        "animation_style": "group_basic",
+        "options": [
+            "audioreactive_scale"
+        ],
+        "start_time": 79.13,
+        "end_time": 79.53,
+        "words": [
+            {
+                "word": "If",
+                "start": 79.13,
+                "end": 79.53
+            }
+        ]
+    },
+    {
+        "group": "Attention is all you need",
+        "animation_style": "group_rectangular",
+        "options": [],
+        "start_time": 79.65,
+        "end_time": 81.29,
+        "words": [
+            {
+                "word": "Attention",
+                "start": 79.65,
+                "end": 80.18
+            },
+            {
+                "word": "is",
+                "start": 80.19,
+                "end": 80.39999999999999
+            },
+            {
+                "word": "all",
+                "start": 80.41,
+                "end": 80.64
+            },
+            {
+                "word": "you",
+                "start": 80.639999,
+                "end": 80.859999
+            },
+            {
+                "word": "need",
+                "start": 80.87,
+                "end": 81.29
+            }
+        ]
+    },
+    {
+        "group": "was just",
+        "animation_style": "group_swirl",
+        "options": [
+            "audioreactive_scale",
+            "invert_colors"
+        ],
+        "start_time": 81.28999999999999,
+        "end_time": 81.74000000000001,
+        "words": [
+            {
+                "word": "was",
+                "start": 81.28999999999999,
+                "end": 81.50999999999999
+            },
+            {
+                "word": "just",
+                "start": 81.51,
+                "end": 81.74000000000001
+            }
+        ]
+    },
+    {
+        "group": "a story about computers,",
+        "animation_style": "word_basic",
+        "options": [],
+        "start_time": 81.78,
+        "end_time": 83.36,
+        "words": [
+            {
+                "word": "a",
+                "start": 81.78,
+                "end": 81.94
+            },
+            {
+                "word": "story",
+                "start": 81.94,
+                "end": 82.39
+            },
+            {
+                "word": "about",
+                "start": 82.389999,
+                "end": 82.699999
+            },
+            {
+                "word": "computers,",
+                "start": 82.7,
+                "end": 83.36
+            }
+        ]
+    },
+    {
+        "group": "I wouldn't be",
+        "animation_style": "word_impact",
+        "options": [
+            "audioreactive_scale"
+        ],
+        "start_time": 83.36,
+        "end_time": 84.06,
+        "words": [
+            {
+                "word": "I",
+                "start": 83.36,
+                "end": 83.54
+            },
+            {
+                "word": "wouldn\u2019t",
+                "start": 83.55,
+                "end": 83.86
+            },
+            {
+                "word": "be",
+                "start": 83.87,
+                "end": 84.06
+            }
+        ]
+    },
+    {
+        "group": "bothering to tell it,",
+        "animation_style": "group_basic",
+        "options": [],
+        "start_time": 84.059999,
+        "end_time": 85.12,
+        "words": [
+            {
+                "word": "bothering",
+                "start": 84.059999,
+                "end": 84.559999
+            },
+            {
+                "word": "to",
+                "start": 84.559999,
+                "end": 84.67999900000001
+            },
+            {
+                "word": "tell",
+                "start": 84.679999,
+                "end": 84.97999899999999
+            },
+            {
+                "word": "it,",
+                "start": 84.98,
+                "end": 85.12
+            }
+        ]
+    },
+    {
+        "group": "and I wouldn't be",
+        "animation_style": "group_rectangular",
+        "options": [
+            "audioreactive_scale",
+            "invert_colors"
+        ],
+        "start_time": 85.139999,
+        "end_time": 86.129999,
+        "words": [
+            {
+                "word": "and",
+                "start": 85.139999,
+                "end": 85.269999
+            },
+            {
+                "word": "I",
+                "start": 85.27,
+                "end": 85.44
+            },
+            {
+                "word": "wouldn\u2019t",
+                "start": 85.45,
+                "end": 85.87
+            },
+            {
+                "word": "be",
+                "start": 85.889999,
+                "end": 86.129999
+            }
+        ]
+    },
+    {
+        "group": "asking you to invest the",
+        "animation_style": "group_swirl",
+        "options": [],
+        "start_time": 86.16,
+        "end_time": 87.78999999999999,
+        "words": [
+            {
+                "word": "asking",
+                "start": 86.16,
+                "end": 86.69
+            },
+            {
+                "word": "you",
+                "start": 86.69,
+                "end": 86.92
+            },
+            {
+                "word": "to",
+                "start": 86.92,
+                "end": 87.10000000000001
+            },
+            {
+                "word": "invest",
+                "start": 87.099999,
+                "end": 87.579999
+            },
+            {
+                "word": "the",
+                "start": 87.63,
+                "end": 87.78999999999999
+            }
+        ]
+    },
+    {
+        "group": "time and energy.",
+        "animation_style": "word_basic",
+        "options": [
+            "audioreactive_scale"
+        ],
+        "start_time": 87.78999999999999,
+        "end_time": 89.29,
+        "words": [
+            {
+                "word": "time",
+                "start": 87.78999999999999,
+                "end": 88.25999999999999
+            },
+            {
+                "word": "and",
+                "start": 88.279999,
+                "end": 88.669999
+            },
+            {
+                "word": "energy.",
+                "start": 88.68,
+                "end": 89.29
+            }
+        ]
+    },
+    {
+        "group": "I think",
+        "animation_style": "word_impact",
+        "options": [
+            "audioreactive_scale",
+            "invert_colors"
+        ],
+        "start_time": 91.049999,
+        "end_time": 91.599999,
+        "words": [
+            {
+                "word": "I",
+                "start": 91.049999,
+                "end": 91.199999
+            },
+            {
+                "word": "think",
+                "start": 91.19999899999999,
+                "end": 91.599999
+            }
+        ]
+    },
+    {
+        "group": "Attention is all you need",
+        "animation_style": "group_basic",
+        "options": [],
+        "start_time": 91.67,
+        "end_time": 92.92,
+        "words": [
+            {
+                "word": "Attention",
+                "start": 91.67,
+                "end": 92.14
+            },
+            {
+                "word": "is",
+                "start": 92.14,
+                "end": 92.27
+            },
+            {
+                "word": "all",
+                "start": 92.27,
+                "end": 92.42999999999999
+            },
+            {
+                "word": "you",
+                "start": 92.43,
+                "end": 92.59
+            },
+            {
+                "word": "need",
+                "start": 92.59,
+                "end": 92.92
+            }
+        ]
+    },
+    {
+        "group": "is about more than computers.",
+        "animation_style": "group_rectangular",
+        "options": [],
+        "start_time": 92.92,
+        "end_time": 94.56,
+        "words": [
+            {
+                "word": "is",
+                "start": 92.92,
+                "end": 93.05
+            },
+            {
+                "word": "about",
+                "start": 93.05,
+                "end": 93.31
+            },
+            {
+                "word": "more",
+                "start": 93.31,
+                "end": 93.57000000000001
+            },
+            {
+                "word": "than",
+                "start": 93.57,
+                "end": 93.80999999999999
+            },
+            {
+                "word": "computers.",
+                "start": 93.81,
+                "end": 94.56
+            }
+        ]
+    },
+    {
+        "group": "I think that no matter",
+        "animation_style": "group_swirl",
+        "options": [
+            "audioreactive_scale"
+        ],
+        "start_time": 95.09,
+        "end_time": 96.64,
+        "words": [
+            {
+                "word": "I",
+                "start": 95.09,
+                "end": 95.27000000000001
+            },
+            {
+                "word": "think",
+                "start": 95.27,
+                "end": 95.58999999999999
+            },
+            {
+                "word": "that",
+                "start": 95.81,
+                "end": 96.08
+            },
+            {
+                "word": "no",
+                "start": 96.1,
+                "end": 96.25
+            },
+            {
+                "word": "matter",
+                "start": 96.25,
+                "end": 96.64
+            }
+        ]
+    },
+    {
+        "group": "who you are,",
+        "animation_style": "word_basic",
+        "options": [],
+        "start_time": 96.65,
+        "end_time": 97.66999999999999,
+        "words": [
+            {
+                "word": "who",
+                "start": 96.65,
+                "end": 96.89
+            },
+            {
+                "word": "you",
+                "start": 96.89,
+                "end": 97.1
+            },
+            {
+                "word": "are,",
+                "start": 97.1,
+                "end": 97.66999999999999
+            }
+        ]
+    },
+    {
+        "group": "no matter",
+        "animation_style": "word_impact",
+        "options": [
+            "audioreactive_scale",
+            "invert_colors"
+        ],
+        "start_time": 97.81,
+        "end_time": 98.39,
+        "words": [
+            {
+                "word": "no",
+                "start": 97.81,
+                "end": 97.96000000000001
+            },
+            {
+                "word": "matter",
+                "start": 97.96,
+                "end": 98.39
+            }
+        ]
+    },
+    {
+        "group": "who you want to be,",
+        "animation_style": "group_basic",
+        "options": [],
+        "start_time": 98.429999,
+        "end_time": 100.03,
+        "words": [
+            {
+                "word": "who",
+                "start": 98.429999,
+                "end": 98.74999899999999
+            },
+            {
+                "word": "you",
+                "start": 98.77,
+                "end": 98.99
+            },
+            {
+                "word": "want",
+                "start": 98.99,
+                "end": 99.3
+            },
+            {
+                "word": "to",
+                "start": 99.309999,
+                "end": 99.45999900000001
+            },
+            {
+                "word": "be,",
+                "start": 99.46000000000001,
+                "end": 100.03
+            }
+        ]
+    },
+    {
+        "group": "no matter",
+        "animation_style": "group_rectangular",
+        "options": [
+            "audioreactive_scale",
+            "invert_colors"
+        ],
+        "start_time": 100.4,
+        "end_time": 100.83,
+        "words": [
+            {
+                "word": "no",
+                "start": 100.4,
+                "end": 100.55000000000001
+            },
+            {
+                "word": "matter",
+                "start": 100.55,
+                "end": 100.83
+            }
+        ]
+    },
+    {
+        "group": "what you want to achieve",
+        "animation_style": "group_swirl",
+        "options": [],
+        "start_time": 100.83,
+        "end_time": 102.459999,
+        "words": [
+            {
+                "word": "what",
+                "start": 100.83,
+                "end": 101.21
+            },
+            {
+                "word": "you",
+                "start": 101.34,
+                "end": 101.57000000000001
+            },
+            {
+                "word": "want",
+                "start": 101.57,
+                "end": 101.82
+            },
+            {
+                "word": "to",
+                "start": 101.83,
+                "end": 101.97
+            },
+            {
+                "word": "achieve",
+                "start": 101.969999,
+                "end": 102.459999
+            }
+        ]
+    },
+    {
+        "group": "in this world",
+        "animation_style": "word_basic",
+        "options": [
+            "audioreactive_scale"
+        ],
+        "start_time": 102.469999,
+        "end_time": 103.47,
+        "words": [
+            {
+                "word": "in",
+                "start": 102.469999,
+                "end": 102.709999
+            },
+            {
+                "word": "this",
+                "start": 102.71000000000001,
+                "end": 102.99000000000001
+            },
+            {
+                "word": "world",
+                "start": 102.99,
+                "end": 103.47
+            }
+        ]
+    },
+    {
+        "group": "there's one thing you need,",
+        "animation_style": "word_impact",
+        "options": [],
+        "start_time": 103.469999,
+        "end_time": 105.3,
+        "words": [
+            {
+                "word": "there\u2019s",
+                "start": 103.469999,
+                "end": 103.859999
+            },
+            {
+                "word": "one",
+                "start": 103.87,
+                "end": 104.34
+            },
+            {
+                "word": "thing",
+                "start": 104.38,
+                "end": 104.71
+            },
+            {
+                "word": "you",
+                "start": 104.719999,
+                "end": 104.939999
+            },
+            {
+                "word": "need,",
+                "start": 104.95,
+                "end": 105.3
+            }
+        ]
+    },
+    {
+        "group": "and only one thing you need.",
+        "animation_style": "group_basic",
+        "options": [
+            "audioreactive_scale"
+        ],
+        "start_time": 105.309999,
+        "end_time": 108.439999,
+        "words": [
+            {
+                "word": "and",
+                "start": 105.309999,
+                "end": 105.659999
+            },
+            {
+                "word": "only",
+                "start": 105.73,
+                "end": 106.39
+            },
+            {
+                "word": "one",
+                "start": 106.42,
+                "end": 106.95
+            },
+            {
+                "word": "thing",
+                "start": 107.119999,
+                "end": 107.56999900000001
+            },
+            {
+                "word": "you",
+                "start": 107.609999,
+                "end": 107.869999
+            },
+            {
+                "word": "need.",
+                "start": 108.119999,
+                "end": 108.439999
+            }
+        ]
+    },
+    {
+        "group": "Attention is all you need.",
+        "animation_style": "group_rectangular",
+        "options": [],
+        "start_time": 110.03999900000001,
+        "end_time": 112.369999,
+        "words": [
+            {
+                "word": "Attention",
+                "start": 110.03999900000001,
+                "end": 110.779999
+            },
+            {
+                "word": "is",
+                "start": 111.56999900000001,
+                "end": 111.76999900000001
+            },
+            {
+                "word": "all",
+                "start": 111.76999900000001,
+                "end": 111.919999
+            },
+            {
+                "word": "you",
+                "start": 111.919999,
+                "end": 112.03999900000001
+            },
+            {
+                "word": "need.",
+                "start": 112.03999900000001,
+                "end": 112.369999
+            }
+        ]
+    }
+]
