@@ -20,27 +20,28 @@ NODE_SPACE_Y = 150
 # --- HELPER FUNCTIONS ---
 
 
-def get_word_dimensions(word_string):
+def get_word_dimensions(word_string, base_op):
     """
-    Creates a temporary Text TOP and Info CHOP to get the precise pixel
+    Uses a temporary Text TOP and Info CHOP to get the precise pixel
     dimensions of a rendered word.
     """
-    # This function assumes it's being run from a script inside 'base1'
-    # or that op('base1') is a valid path.
-    base = op('base1')
-    if not base:
-        print("ERROR: Base component 'base1' not found.")
+    if not base_op:
+        print("ERROR: Base component not found in get_word_dimensions.")
         return 0, 0
 
-    text_top = base.op('temp_text') or base.create(td.textTOP, "temp_text")
+    text_top = base_op.op('temp_text') or base_op.create(
+        td.textTOP, "temp_text")
     text_top.par.text = word_string
     text_top.par.font = FONT_NAME
     text_top.par.typeface = FONT_TYPEFACE
     text_top.par.fontsizex = FONT_SIZE
+
+    # The resolution here just needs to be large enough not to clip the text
     text_top.par.resolutionw = container_w
     text_top.par.resolutionh = container_h
 
-    info_chop = base.op('temp_info') or base.create(td.infoCHOP, "temp_info")
+    info_chop = base_op.op('temp_info') or base_op.create(
+        td.infoCHOP, "temp_info")
     info_chop.par.op = text_top
     info_chop.cook(force=True)  # Ensure the CHOP has the latest values
 
@@ -52,7 +53,7 @@ def get_word_dimensions(word_string):
 # --- LOGIC & CALCULATION ---
 
 
-def pack_words_generatively(words_to_pack, container_width, container_height, padding):
+def pack_words_generatively(words_to_pack, container_width, container_height, padding, base_op):
     """
     Calculates the position and rotation for each word to fit inside a container.
     This function DOES NOT create any TouchDesigner nodes.
@@ -69,7 +70,7 @@ def pack_words_generatively(words_to_pack, container_width, container_height, pa
 
     while words_queue:
         word = words_queue[0]
-        original_width, original_height = get_word_dimensions(word)
+        original_width, original_height = get_word_dimensions(word, base_op)
 
         # Dimensions for horizontal and vertical placement, including padding
         h_width = original_width + padding
@@ -112,21 +113,30 @@ def pack_words_generatively(words_to_pack, container_width, container_height, pa
                 'word': word,
                 'x': center_x,
                 'y': center_y,
+                'width': original_width,
+                'height': original_height,
                 'rotation': chosen_rotation
             })
             words_queue.pop(0)
         else:
-            # Word doesn't fit, start a new shelf
+            # Word doesn't fit, try to start a new shelf
             new_shelf_y = shelf_y + shelf_height
-            min_new_height = min(h_height, v_height)
 
-            if (new_shelf_y + min_new_height) <= container_height:
+            # Check if the word can fit on a new shelf in *at least one* orientation
+            can_start_new_shelf_h = (
+                new_shelf_y + h_height) <= container_height and h_width <= container_width
+            can_start_new_shelf_v = (
+                new_shelf_y + v_height) <= container_height and v_width <= container_width
+
+            if can_start_new_shelf_h or can_start_new_shelf_v:
                 shelf_y = new_shelf_y
                 shelf_x = 0
                 shelf_height = 0
+                # The loop will continue and retry the word on the next iteration
             else:
+                # Word truly cannot fit.
                 print(
-                    f"Warning: Word '{word}' cannot fit. Container full. Skipping.")
+                    f"Warning: Word '{word}' cannot fit. Container is full. Skipping.")
                 words_queue.pop(0)
 
     return layout_data
@@ -134,12 +144,11 @@ def pack_words_generatively(words_to_pack, container_width, container_height, pa
 # --- TOUCHDESIGNER NODE CREATION ---
 
 
-def create_layout_from_data(layout_data, container_width, container_height):
+def create_layout_from_data(layout_data, container_width, container_height, base_op):
     """
     Takes a list of placement data and builds the TouchDesigner network.
     """
-    base = op('base1')
-    if not base:
+    if not base_op:
         print("ERROR: Base component 'base1' not found.")
         return
 
@@ -148,15 +157,15 @@ def create_layout_from_data(layout_data, container_width, container_height):
     for i, data in enumerate(layout_data):
         word_string = data['word']
         rotation = data['rotation']
+        word_w = data['width']
+        word_h = data['height']
 
         # --- Coordinate Conversion ---
-        # 1. Convert algorithm's top-left origin (y-down) to center origin (y-up)
-        # 2. This gives us the final pixel coordinates for the Transform TOP
         final_tx = data['x'] - (container_width / 2)
         final_ty = (container_height / 2) - data['y']
 
         # Create the Text TOP for the word
-        text_top = base.create(td.textTOP, f"text{i}")
+        text_top = base_op.create(td.textTOP, f"text{i}")
         text_top.nodeX = 0
         text_top.nodeY = -NODE_SPACE_Y * i
         text_top.viewer = True
@@ -164,11 +173,14 @@ def create_layout_from_data(layout_data, container_width, container_height):
         text_top.par.font = FONT_NAME
         text_top.par.typeface = FONT_TYPEFACE
         text_top.par.fontsizex = FONT_SIZE
-        text_top.par.resolutionw = container_w
-        text_top.par.resolutionh = container_h
+
+        # --- CRITICAL FIX: Set resolution to match the text content ---
+        # This ensures the rotation pivot is the center of the word.
+        text_top.par.resolutionw = word_w
+        text_top.par.resolutionh = word_h
 
         # Create a Transform TOP to position and rotate the word
-        transform_top = base.create(td.transformTOP, f"transform{i}")
+        transform_top = base_op.create(td.transformTOP, f"transform{i}")
         transform_top.nodeX = NODE_SPACE_X
         transform_top.nodeY = -NODE_SPACE_Y * i
         transform_top.viewer = True
@@ -177,22 +189,22 @@ def create_layout_from_data(layout_data, container_width, container_height):
         # Set the final, converted position and rotation
         transform_top.par.tx = final_tx
         transform_top.par.ty = final_ty
-        transform_top.par.tunit = 0  # set unit to Pixels
+        transform_top.par.tunit = 0  # Set Translate Units to Pixels
         transform_top.par.rotate = rotation
 
         transform_tops.append(transform_top)
 
     # Composite all the transformed text TOPs together
-    comp = base.create(td.compositeTOP, "comp1")
+    comp = base_op.create(td.compositeTOP, "comp1")
     comp.nodeX = NODE_SPACE_X * 2
     comp.viewer = True
     comp.par.resolutionw = container_w
     comp.par.resolutionh = container_h
-    comp.par.operand = 'add'  # 'Add' often looks good for this effect
+    comp.par.operand = 'add'
     comp.setInputs(transform_tops)
 
     # Create a final Out TOP
-    out = base.create(td.outTOP, "out1")
+    out = base_op.create(td.outTOP, "out1")
     out.nodeX = NODE_SPACE_X * 3
     out.viewer = True
     out.par.resolutionw = container_w
@@ -203,35 +215,41 @@ def create_layout_from_data(layout_data, container_width, container_height):
 # --------
 # EXECUTION
 # --------
+def run():
+    """
+    Main execution function to run the entire process.
+    """
+    print("Starting layout process...")
 
-print("Starting layout process...")
+    # Ensure a clean slate
+    base = op('base1')
+    if base:
+        base.destroy()
 
-# Ensure a clean slate
-base = op('base1')
-if base:
-    base.destroy()
+    base = me.parent().create(baseCOMP, "base1")
 
-me.parent().create(baseCOMP, "base1")
+    # 1. Calculate the layout
+    print("Calculating word positions...")
+    layout = pack_words_generatively(
+        my_words, container_w, container_h, padding, base)
 
-# 1. Calculate the layout
-print("Calculating word positions...")
-layout = pack_words_generatively(
-    my_words, container_w, container_h, padding)
+    # 2. Build the TouchDesigner network from the calculated data
+    print("Creating TouchDesigner nodes...")
+    create_layout_from_data(layout, container_w, container_h, base)
 
-# 2. Build the TouchDesigner network from the calculated data
-print("Creating TouchDesigner nodes...")
-create_layout_from_data(layout, container_w, container_h)
+    # Clean up temporary nodes
+    if base.op('temp_text'):
+        base.op('temp_text').destroy()
+    if base.op('temp_info'):
+        base.op('temp_info').destroy()
 
-# Clean up temporary nodes
-base = op('base1')
-if base.op('temp_text'):
-    base.op('temp_text').destroy()
-if base.op('temp_info'):
-    base.op('temp_info').destroy()
+    print("\n--- Layout Calculation Complete ---")
+    for item in layout:
+        print(
+            f"Word: '{item['word']}', Center: ({item['x']:.1f}, {item['y']:.1f}), Rot: {item['rotation']} deg")
 
-print("\n--- Layout Calculation Complete ---")
-for item in layout:
-    print(
-        f"Word: '{item['word']}', Center: ({item['x']:.1f}, {item['y']:.1f}), Rot: {item['rotation']} deg")
+    print("\nScript finished.")
 
-print("\nScript finished.")
+
+# To run this, execute the run() function from a Text DAT.
+run()
