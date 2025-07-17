@@ -4,6 +4,7 @@ import sys
 sys.path.extend(
     ["C:/Projects/td-automated-text-layouts/scripts"])
 from helpers.find_transcript_groupings import find_grouping_times, find_grouping_times_json  # nopep8
+from helpers.backgrounds import background_one  # nopep8
 # from helpers.layouts import basic_layout, rectangular_fit_layout  # nopep8
 
 # "animation_style": ["group_basic", "group_rectangular", "group_swirl", "word_basic", "word_impact"]
@@ -39,6 +40,16 @@ LAST_FRAME = me.time.end  # Last frame of the
 # -----------------
 # SCRIPT LOGIC
 # -----------------
+
+
+def clear_old_components():
+    excluded_ops = ['script1', 'script2']
+    old_components = parent.findChildren(maxDepth=1)
+    for op_object in old_components:
+        if op_object.name in excluded_ops:
+            pass
+        else:
+            op_object.destroy()
 
 
 def import_audio():
@@ -85,6 +96,7 @@ def import_audio():
     audiospect1.setInputs([math1])
     audiospect1.nodeX = 400
     audiospect1.viewer = True
+    audiospect1.par.fftsize = 5
 
     # Analyze
     analyze1 = audioreactive_scale.create(td.analyzeCHOP, "analyze1")
@@ -97,7 +109,11 @@ def import_audio():
     math2.setInputs([analyze1])
     math2.nodeX = 800
     math2.viewer = True
-    math2.par.torange1 = 0.8  # set To Range to (0.8-1)
+    # Adjust the From and To Ranges based on your audio file
+    math2.par.fromrange1 = 0
+    math2.par.fromrange2 = 0.5
+    math2.par.torange1 = 0.8
+    math2.par.torange2 = 1
 
     # Null / Out
     null1 = audioreactive_scale.create(td.nullCHOP, "null1")
@@ -111,6 +127,12 @@ def import_audio():
 
     audioreactive_scale.setInputs([audio_file])
 
+    # Adjust timeline based on length of audio file
+    # Overall end frame of timeline
+    root.time.end = math.ceil(audio_info['file_length_frames'])
+    # End frame of the working range
+    root.time.rangeEnd = math.ceil(audio_info['file_length_frames'])
+
 
 def create_text_layouts():
     """
@@ -123,7 +145,7 @@ def create_text_layouts():
         grouping_data = json.load(f)
 
     # set background
-    background = background_one(parent)
+    background = background_one(parent, td.noiseTOP)
 
     for i, item in enumerate(grouping_data):
         line = item['group'].strip()  # Remove any leading/trailing whitespace
@@ -136,7 +158,6 @@ def create_text_layouts():
 
         # Create a Base COMP for the group
         base = parent.create(td.baseCOMP, f"group{i}")
-        base.viewer = True
         base.nodeX = col * BASE_SPACING
         base.nodeY = row * -BASE_SPACING  # Use negative spacing to build downwards
 
@@ -276,6 +297,13 @@ def make_layout(type, parent, base, processed_lines, options):
     else:
         pass
 
+    # Add audioreactivity to transform TOPs
+    if ("audioreactive_scale" in options):
+        transform_tops = base.findChildren(name="transform*")
+        for t in transform_tops:
+            t.par.sx.expr = "op('in2')['chan1']"
+            t.par.sy.expr = "op('in2')['chan1']"
+
     # Create a composite and level TOP
     comp_top = base.create(td.compositeTOP, "comp1")
     comp_top.setInputs([in_top, layout])
@@ -303,7 +331,7 @@ def make_layout(type, parent, base, processed_lines, options):
 def group_basic_layout(parent, base, processed_lines, internal_node_x, internal_node_y):
     # Create a Text TOP for each processed line
     num_strings_in_list = len(processed_lines)
-    all_text_tops = []
+    all_transform_tops = []
     for j, text_line in enumerate(processed_lines):
         text_top = base.create(td.textTOP, f"text{j}")
         text_top.viewer = True
@@ -316,7 +344,15 @@ def group_basic_layout(parent, base, processed_lines, internal_node_x, internal_
         text_top.nodeX = internal_node_x
         text_top.nodeY = internal_node_y
         internal_node_y -= TOP_SPACING
-        all_text_tops.append(text_top)
+
+        # Create transform TOP for text TOP
+        transform_top = base.create(td.transformTOP, f"transform_{j}")
+        transform_top.viewer = True
+        transform_top.par.resolutionw = parent.par.w
+        transform_top.par.resolutionh = parent.par.h / num_strings_in_list
+        transform_top.nodeX = internal_node_x
+        transform_top.setInputs([text_top])
+        all_transform_tops.append(transform_top)
 
     layout = base.create(td.layoutTOP, "layout")
     layout.viewer = True
@@ -329,7 +365,7 @@ def group_basic_layout(parent, base, processed_lines, internal_node_x, internal_
     layout.nodeX = internal_node_x
 
     # Connect all Text TOPs to the Layout TOP
-    layout.setInputs(all_text_tops)
+    layout.setInputs(all_transform_tops)
 
     return layout, internal_node_x, internal_node_y
 
@@ -337,7 +373,7 @@ def group_basic_layout(parent, base, processed_lines, internal_node_x, internal_
 def group_rectangular_fit_layout(parent, base, processed_lines, internal_node_x, internal_node_y):
     # Create a Text TOP for each processed line
     num_strings_in_list = len(processed_lines)
-    all_text_tops = []
+    all_transform_tops = []
     for j, text_line in enumerate(processed_lines):
         text_top = base.create(td.textTOP, f"text{j}")
         text_top.viewer = True
@@ -350,7 +386,15 @@ def group_rectangular_fit_layout(parent, base, processed_lines, internal_node_x,
         text_top.nodeX = internal_node_x
         text_top.nodeY = internal_node_y
         internal_node_y -= TOP_SPACING
-        all_text_tops.append(text_top)
+
+        # Create transform TOP for text TOP
+        transform_top = base.create(td.transformTOP, f"transform_{j}")
+        transform_top.viewer = True
+        transform_top.par.resolutionw = parent.par.w
+        transform_top.par.resolutionh = parent.par.h / num_strings_in_list
+        transform_top.nodeX = internal_node_x
+        transform_top.setInputs([text_top])
+        all_transform_tops.append(transform_top)
 
     layout = base.create(td.layoutTOP, "layout")
     layout.viewer = True
@@ -363,7 +407,7 @@ def group_rectangular_fit_layout(parent, base, processed_lines, internal_node_x,
     layout.nodeX = internal_node_x
 
     # Connect all Text TOPs to the Layout TOP
-    layout.setInputs(all_text_tops)
+    layout.setInputs(all_transform_tops)
 
     return layout, internal_node_x, internal_node_y
 
@@ -371,7 +415,7 @@ def group_rectangular_fit_layout(parent, base, processed_lines, internal_node_x,
 def group_swirl(parent, base, processed_lines, internal_node_x, internal_node_y):
     # Create a Text TOP for each processed line
     num_strings_in_list = len(processed_lines)
-    all_text_tops = []
+    all_transform_tops = []
     for j, text_line in enumerate(processed_lines):
         text_top = base.create(td.textTOP, f"text{j}")
         text_top.viewer = True
@@ -384,7 +428,15 @@ def group_swirl(parent, base, processed_lines, internal_node_x, internal_node_y)
         text_top.nodeX = internal_node_x
         text_top.nodeY = internal_node_y
         internal_node_y -= TOP_SPACING
-        all_text_tops.append(text_top)
+
+        # Create transform TOP for text TOP
+        transform_top = base.create(td.transformTOP, f"transform_{j}")
+        transform_top.viewer = True
+        transform_top.par.resolutionw = parent.par.w
+        transform_top.par.resolutionh = parent.par.h / num_strings_in_list
+        transform_top.nodeX = internal_node_x
+        transform_top.setInputs([text_top])
+        all_transform_tops.append(transform_top)
 
     layout = base.create(td.layoutTOP, "layout")
     layout.viewer = True
@@ -397,7 +449,7 @@ def group_swirl(parent, base, processed_lines, internal_node_x, internal_node_y)
     layout.nodeX = internal_node_x
 
     # Connect all Text TOPs to the Layout TOP
-    layout.setInputs(all_text_tops)
+    layout.setInputs(all_transform_tops)
 
     return layout, internal_node_x, internal_node_y
 
@@ -499,39 +551,13 @@ def word_impact(parent, base, processed_lines, internal_node_x, internal_node_y)
 
     return layout, internal_node_x, internal_node_y
 
-# -----------------
-# BACKGROUNDS
-# -----------------
-
-
-def background_one(parent):
-    noise = parent.create(td.noiseTOP, 'bg1')
-    noise.viewer = True
-    noise.par.period = 1.74
-    noise.par.harmon = 5
-    noise.par.spread = 0.8
-    noise.par.gain = 1.34
-    noise.par.exp = 2.72
-    noise.par.mono = 0
-    noise.par.tz.expr = "me.time.frame/100"
-    noise.par.resolutionw = parent.par.w
-    noise.par.resolutionh = parent.par.h
-    noise.nodeX = -BASE_SPACING
-    return noise
-
 
 # -----------------
 # EXECUTION
 # -----------------
 # Clear previous components if they exist to allow for rerunning the script
+clear_old_components()
 print("Clearing old components...")
-excluded_ops = ['script1', 'script2']
-old_components = parent.findChildren(maxDepth=1)
-for op_object in old_components:
-    if op_object.name in excluded_ops:
-        pass
-    else:
-        op_object.destroy()
 
 # Run the main functions
 print("Importing & analyzing audio...")

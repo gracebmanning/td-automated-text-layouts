@@ -4,11 +4,17 @@ import string
 
 def clean_word(word):
     """
-    Cleans a word by converting it to lowercase and removing punctuation.
+    Cleans a word by standardizing apostrophes, converting to lowercase,
+    and removing other punctuation.
     """
-    # Remove punctuation, but keep apostrophes for contractions like "you'll"
+    # Standardize different types of apostrophes and quotes to a single straight quote
+    # This handles characters like ‘, ’, and `
+    word = word.replace("’", "'").replace("‘", "'").replace("`", "'")
+
+    # Create a translator that removes all punctuation EXCEPT the now-standardized apostrophe
     translator = str.maketrans('', '', string.punctuation.replace("'", ""))
-    return word.lower().translate(translator)
+    result = word.lower().translate(translator)
+    return result
 
 
 def find_grouping_times(groupings_file_path, transcript_file_path):
@@ -170,3 +176,15 @@ def find_grouping_times_json(groupings_file_path, transcript_file_path):
                 break  # Stop searching for this grouping and move to the next one
 
     return results
+
+
+if __name__ == "__main__":
+    transcript_filename = "../../input_files/attentionIsAllYouNeed1_transcript.json"
+    groupings_filename = "../../input_files/attentionIsAllYouNeed1_groupings.json"
+    results = find_grouping_times_json(groupings_filename, transcript_filename)
+
+    output_json_path = "./testing/testing_output_4.json"
+    with open(output_json_path, 'w', encoding='utf-8') as f:
+        json.dump(results, f, indent=4)
+        print(
+            f"\nFull recursive alignment results saved to: {output_json_path}")
